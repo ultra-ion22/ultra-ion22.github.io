@@ -1,0 +1,1775 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>白桃软糖cc - 品牌官方视频门户,记录甜蜜生活影像</title>
+<meta name="description" content="白桃软糖cc官方网站，以影像记录甜蜜治愈的日常片段，汇聚原创创作者，打造值得信赖的短视频内容社区。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3CradialGradient id='g' cx='35%25' cy='30%25'%3E%3Cstop offset='0' stop-color='%23ffe3ec'/%3E%3Cstop offset='1' stop-color='%23ff8fb1'/%3E%3C/radialGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='16' fill='%23fff4f7'/%3E%3Ccircle cx='32' cy='32' r='18' fill='url(%23g)'/%3E%3Cpath d='M20 26c6-2 18-2 24 0-2 10-8 16-12 16s-10-6-12-16z' fill='%23ffffff' opacity='.55'/%3E%3C/svg%3E">
+<style>
+:root{
+  --cc-pink:#ff7fa5;
+  --cc-pink-deep:#e85b86;
+  --cc-pink-soft:#ffeef3;
+  --cc-peach:#ffd9c6;
+  --cc-lilac:#c9b8ff;
+  --cc-ink:#3b2f3a;
+  --cc-ink-soft:#6f6270;
+  --cc-line:#f2dfe6;
+  --cc-bg:#fffafc;
+  --cc-card:#ffffff;
+  --cc-radius:18px;
+  --cc-shadow:0 10px 30px rgba(232,91,134,.10);
+  --cc-shadow-lg:0 18px 50px rgba(232,91,134,.16);
+  --cc-max:1180px;
+  --cc-announce-h:38px;
+  --cc-header-h:66px;
+}
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+  margin:0;
+  font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,sans-serif;
+  color:var(--cc-ink);
+  background:var(--cc-bg);
+  line-height:1.75;
+  -webkit-font-smoothing:antialiased;
+}
+img,svg{display:block;max-width:100%;}
+a{color:inherit;text-decoration:none;}
+button{font-family:inherit;cursor:pointer;}
+.cc-container{width:100%;max-width:var(--cc-max);margin:0 auto;padding:0 22px;}
+.cc-section{padding:64px 0;scroll-margin-top:calc(var(--cc-announce-h) + var(--cc-header-h) + 10px);}
+.cc-section--alt{background:linear-gradient(180deg,#fff6f9 0%,#fffafc 100%);}
+.cc-kicker{
+  display:inline-block;font-size:12px;letter-spacing:.18em;font-weight:700;
+  color:var(--cc-pink-deep);background:var(--cc-pink-soft);
+  padding:5px 12px;border-radius:999px;margin-bottom:14px;
+}
+.cc-h2{font-size:clamp(22px,3vw,32px);margin:0 0 10px;line-height:1.35;letter-spacing:.5px;}
+.cc-h3{font-size:17px;margin:0 0 6px;line-height:1.5;}
+.cc-lede{color:var(--cc-ink-soft);font-size:15px;max-width:760px;margin:0 0 34px;}
+.cc-btn{
+  display:inline-flex;align-items:center;gap:8px;border:none;
+  padding:11px 22px;border-radius:999px;font-size:14px;font-weight:600;
+  background:var(--cc-pink);color:#fff;transition:.25s;box-shadow:0 8px 20px rgba(255,127,165,.32);
+}
+.cc-btn:hover{background:var(--cc-pink-deep);transform:translateY(-2px);}
+.cc-btn--ghost{background:#fff;color:var(--cc-pink-deep);border:1px solid var(--cc-line);box-shadow:none;}
+.cc-btn--ghost:hover{background:var(--cc-pink-soft);}
+.cc-btn--sm{padding:7px 14px;font-size:13px;}
+
+/* ===== 公告条 + 页头 吸顶 ===== */
+.cc-sticky-wrap{position:sticky;top:0;z-index:120;}
+.cc-announce{
+  background:linear-gradient(90deg,#ff8fb1,#c9b8ff 55%,#ffb38a);
+  color:#fff;font-size:13px;height:var(--cc-announce-h);
+  display:flex;align-items:center;overflow:hidden;
+}
+.cc-announce__track{display:flex;gap:56px;white-space:nowrap;padding-left:calc(50% - 560px);animation:cc-scroll 32s linear infinite;}
+.cc-announce__item{display:inline-flex;align-items:center;gap:8px;font-weight:500;}
+.cc-announce__dot{width:6px;height:6px;border-radius:50%;background:#fff;opacity:.9;}
+@keyframes cc-scroll{from{transform:translateX(0);}to{transform:translateX(-50%);}}
+@media (prefers-reduced-motion:reduce){.cc-announce__track{animation:none;}}
+.cc-header{
+  background:rgba(255,250,252,.96);backdrop-filter:blur(12px);
+  border-bottom:1px solid var(--cc-line);height:var(--cc-header-h);
+}
+.cc-header__inner{
+  max-width:var(--cc-max);margin:0 auto;padding:0 22px;height:100%;
+  display:flex;align-items:center;gap:22px;
+}
+.cc-logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:17px;letter-spacing:.5px;flex-shrink:0;}
+.cc-logo__mark{width:34px;height:34px;border-radius:11px;background:linear-gradient(140deg,#ffb6c9,#ff8fb1 55%,#c9b8ff);position:relative;flex-shrink:0;}
+.cc-logo__mark::after{content:"";position:absolute;inset:9px;border-radius:50%;background:#fff;opacity:.85;}
+.cc-logo__mark::before{content:"";position:absolute;left:13px;top:12px;border-left:8px solid var(--cc-pink-deep);border-top:5px solid transparent;border-bottom:5px solid transparent;z-index:2;}
+.cc-nav{display:flex;gap:4px;margin-left:8px;flex-wrap:wrap;}
+.cc-nav a{
+  font-size:14px;color:var(--cc-ink-soft);padding:7px 12px;border-radius:999px;transition:.2s;font-weight:500;
+}
+.cc-nav a:hover{color:var(--cc-pink-deep);background:var(--cc-pink-soft);}
+.cc-header__tools{margin-left:auto;display:flex;align-items:center;gap:10px;}
+.cc-search{position:relative;display:flex;align-items:center;}
+.cc-search input{
+  width:190px;border:1px solid var(--cc-line);background:#fff;border-radius:999px;
+  padding:8px 38px 8px 15px;font-size:13px;outline:none;transition:.25s;color:var(--cc-ink);
+}
+.cc-search input:focus{width:230px;border-color:var(--cc-pink);box-shadow:0 0 0 4px rgba(255,127,165,.14);}
+.cc-search button{
+  position:absolute;right:4px;top:50%;transform:translateY(-50%);
+  border:none;background:var(--cc-pink);color:#fff;width:28px;height:28px;border-radius:50%;
+  display:grid;place-items:center;font-size:13px;
+}
+.cc-search__hint{
+  position:absolute;top:calc(100% + 8px);left:0;right:0;background:#fff;border:1px solid var(--cc-line);
+  border-radius:14px;box-shadow:var(--cc-shadow);padding:8px;font-size:13px;display:none;z-index:30;
+}
+.cc-search__hint.cc-is-open{display:block;}
+.cc-search__hint p{margin:0;padding:6px 10px;border-radius:8px;color:var(--cc-ink-soft);}
+.cc-search__hint p.cc-hit{background:var(--cc-pink-soft);color:var(--cc-pink-deep);font-weight:600;}
+.cc-burger{display:none;border:1px solid var(--cc-line);background:#fff;border-radius:10px;width:40px;height:36px;place-items:center;}
+.cc-burger span{display:block;width:17px;height:2px;background:var(--cc-ink);margin:2.5px 0;border-radius:2px;}
+
+/* ===== 首屏 ===== */
+.cc-hero{padding:56px 0 40px;position:relative;overflow:hidden;}
+.cc-hero::before{
+  content:"";position:absolute;width:520px;height:520px;border-radius:50%;
+  background:radial-gradient(circle,rgba(255,182,201,.42),transparent 68%);
+  top:-180px;right:-120px;pointer-events:none;
+}
+.cc-hero::after{
+  content:"";position:absolute;width:380px;height:380px;border-radius:50%;
+  background:radial-gradient(circle,rgba(201,184,255,.30),transparent 70%);
+  bottom:-160px;left:-120px;pointer-events:none;
+}
+.cc-hero__grid{display:grid;grid-template-columns:1.05fr .95fr;gap:46px;align-items:center;position:relative;z-index:2;}
+.cc-hero__badges{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:16px;}
+.cc-badge{
+  font-size:12px;font-weight:600;color:var(--cc-pink-deep);background:#fff;
+  border:1px solid var(--cc-line);border-radius:999px;padding:5px 12px;
+}
+.cc-h1{
+  font-size:clamp(34px,5.4vw,58px);line-height:1.12;margin:0 0 8px;
+  letter-spacing:-.5px;font-weight:800;
+  background:linear-gradient(120deg,#3b2f3a 30%,#e85b86 70%,#a992ff);
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+}
+.cc-hero__slogan{font-size:17px;font-weight:600;color:var(--cc-pink-deep);margin:0 0 14px;}
+.cc-hero__intro{color:var(--cc-ink-soft);font-size:15px;margin:0 0 22px;max-width:540px;}
+.cc-hero__actions{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:30px;}
+.cc-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;max-width:520px;}
+.cc-stat{
+  background:#fff;border:1px solid var(--cc-line);border-radius:14px;padding:13px 15px;
+  box-shadow:0 4px 14px rgba(232,91,134,.05);
+}
+.cc-stat__num{font-size:22px;font-weight:800;color:var(--cc-pink-deep);line-height:1.2;}
+.cc-stat__label{font-size:12px;color:var(--cc-ink-soft);}
+
+/* 首屏视觉 */
+.cc-hero__visual{position:relative;}
+.cc-hero__main{
+  border-radius:24px;overflow:hidden;box-shadow:var(--cc-shadow-lg);background:#fff;
+  border:1px solid var(--cc-line);
+}
+.cc-hero__main svg{width:100%;height:auto;aspect-ratio:16/11;}
+.cc-hero__float{
+  position:absolute;background:#fff;border-radius:16px;box-shadow:var(--cc-shadow-lg);
+  border:1px solid var(--cc-line);padding:11px 14px;display:flex;align-items:center;gap:10px;font-size:13px;
+}
+.cc-hero__float--a{left:-14px;bottom:44px;animation:cc-float 5s ease-in-out infinite;}
+.cc-hero__float--b{right:-10px;top:36px;animation:cc-float 6.2s ease-in-out infinite .6s;}
+@keyframes cc-float{0%,100%{transform:translateY(0);}50%{transform:translateY(-8px);}}
+.cc-avatar{
+  width:34px;height:34px;border-radius:50%;display:grid;place-items:center;
+  font-size:13px;font-weight:700;color:#fff;flex-shrink:0;
+}
+.cc-avatar--pink{background:linear-gradient(140deg,#ffb0c5,#ff7fa5);}
+.cc-avatar--lilac{background:linear-gradient(140deg,#cfc1ff,#9f8bff);}
+.cc-avatar--peach{background:linear-gradient(140deg,#ffcba9,#ff9f74);}
+.cc-avatar--mint{background:linear-gradient(140deg,#a9e6d4,#5ecfb0);}
+.cc-avatar--sky{background:linear-gradient(140deg,#a9d5ff,#6fa8ff);}
+.cc-avatar--butter{background:linear-gradient(140deg,#ffe6a0,#f7c543);}
+.cc-play{
+  width:26px;height:26px;border-radius:50%;background:var(--cc-pink-soft);
+  display:grid;place-items:center;color:var(--cc-pink-deep);font-size:11px;flex-shrink:0;
+}
+
+/* ===== 深度解析块 ===== */
+.cc-about__grid{display:grid;grid-template-columns:1fr 1fr;gap:36px;align-items:start;}
+.cc-about__article p{color:var(--cc-ink-soft);font-size:15px;margin:0 0 16px;}
+.cc-about__article strong{color:var(--cc-ink);font-weight:700;}
+.cc-about__aside{display:grid;gap:14px;}
+.cc-mini{
+  background:#fff;border:1px solid var(--cc-line);border-radius:var(--cc-radius);padding:18px 20px;
+  box-shadow:0 6px 18px rgba(232,91,134,.05);
+}
+.cc-mini__title{font-size:14px;font-weight:700;margin:0 0 6px;display:flex;align-items:center;gap:8px;}
+.cc-mini__title i{width:8px;height:8px;border-radius:50%;background:var(--cc-pink);display:inline-block;}
+.cc-mini p{margin:0;font-size:13.5px;color:var(--cc-ink-soft);}
+.cc-tagline{display:flex;flex-wrap:wrap;gap:8px;margin-top:6px;}
+.cc-tag{
+  font-size:12px;color:var(--cc-pink-deep);background:var(--cc-pink-soft);
+  border-radius:999px;padding:4px 11px;font-weight:500;
+}
+
+/* ===== 视频卡片通用 ===== */
+.cc-vgrid{display:grid;gap:22px;}
+.cc-vcard{
+  background:var(--cc-card);border:1px solid var(--cc-line);border-radius:var(--cc-radius);
+  overflow:hidden;transition:.28s;display:flex;flex-direction:column;
+}
+.cc-vcard:hover{transform:translateY(-5px);box-shadow:var(--cc-shadow-lg);border-color:#ffd2df;}
+.cc-vcard__cover{position:relative;overflow:hidden;}
+.cc-vcard__cover svg{width:100%;aspect-ratio:16/9;height:auto;transition:transform .5s;}
+.cc-vcard:hover .cc-vcard__cover svg{transform:scale(1.045);}
+.cc-vcard__play{
+  position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);
+  width:46px;height:46px;border-radius:50%;background:rgba(255,255,255,.86);
+  display:grid;place-items:center;color:var(--cc-pink-deep);font-size:15px;
+  box-shadow:0 6px 18px rgba(59,47,58,.18);transition:.25s;
+}
+.cc-vcard:hover .cc-vcard__play{background:var(--cc-pink);color:#fff;}
+.cc-vcard__tag{
+  position:absolute;top:10px;left:10px;font-size:11px;font-weight:700;color:#fff;
+  background:rgba(232,91,134,.88);padding:3px 10px;border-radius:999px;
+}
+.cc-vcard__time{
+  position:absolute;bottom:10px;right:10px;font-size:11px;color:#fff;
+  background:rgba(59,47,58,.62);padding:2px 8px;border-radius:999px;
+}
+.cc-vcard__body{padding:15px 17px 17px;display:flex;flex-direction:column;gap:9px;flex:1;}
+.cc-vcard__title{font-size:15.5px;font-weight:700;margin:0;line-height:1.5;}
+.cc-vcard__desc{font-size:13px;color:var(--cc-ink-soft);margin:0;line-height:1.65;}
+.cc-vcard__meta{display:flex;align-items:center;gap:8px;font-size:12px;color:var(--cc-ink-soft);margin-top:auto;}
+.cc-vcard__meta .cc-avatar{width:26px;height:26px;font-size:11px;}
+.cc-vcard__actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:4px;}
+.cc-chip{
+  border:1px solid var(--cc-line);background:#fff;color:var(--cc-ink-soft);
+  font-size:12px;padding:5px 11px;border-radius:999px;transition:.2s;display:inline-flex;align-items:center;gap:5px;
+}
+.cc-chip:hover{border-color:var(--cc-pink);color:var(--cc-pink-deep);}
+.cc-chip.cc-is-on{background:var(--cc-pink-soft);border-color:#ffc3d5;color:var(--cc-pink-deep);font-weight:700;}
+
+/* 焦点区：2大4小 */
+.cc-focus{display:grid;grid-template-columns:1.35fr 1fr;gap:22px;}
+.cc-focus__side{display:grid;grid-template-columns:1fr 1fr;gap:15px;align-content:start;}
+.cc-vcard--mini .cc-vcard__body{padding:11px 13px 13px;gap:6px;}
+.cc-vcard--mini .cc-vcard__title{font-size:13.5px;}
+.cc-vcard--mini .cc-vcard__desc{font-size:12px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;}
+.cc-vcard--big .cc-vcard__title{font-size:20px;}
+
+/* ===== 专题 ===== */
+.cc-topic-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
+.cc-topic{
+  border-radius:var(--cc-radius);padding:24px 22px;color:#fff;position:relative;overflow:hidden;
+  min-height:196px;display:flex;flex-direction:column;justify-content:space-between;
+  box-shadow:var(--cc-shadow);transition:.3s;
+}
+.cc-topic:hover{transform:translateY(-5px);box-shadow:var(--cc-shadow-lg);}
+.cc-topic:nth-child(1){background:linear-gradient(150deg,#ff9ab6,#ff7fa5 60%,#e85b86);}
+.cc-topic:nth-child(2){background:linear-gradient(150deg,#c9b8ff,#a98bff 60%,#8b6cf0);}
+.cc-topic:nth-child(3){background:linear-gradient(150deg,#ffc7a8,#ff9f74 60%,#f07f4f);}
+.cc-topic:nth-child(4){background:linear-gradient(150deg,#9fdcc9,#5ecfb0 60%,#37a88b);}
+.cc-topic__status{
+  display:inline-block;font-size:11px;font-weight:700;background:rgba(255,255,255,.22);
+  padding:3px 10px;border-radius:999px;margin-bottom:10px;backdrop-filter:blur(4px);
+}
+.cc-topic h3{font-size:18px;margin:0 0 8px;line-height:1.4;}
+.cc-topic p{margin:0;font-size:13px;opacity:.92;line-height:1.65;}
+.cc-topic__foot{display:flex;justify-content:space-between;align-items:center;margin-top:16px;font-size:12px;opacity:.9;}
+
+/* ===== 创作者 ===== */
+.cc-creators{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
+.cc-creator{
+  background:#fff;border:1px solid var(--cc-line);border-radius:var(--cc-radius);
+  padding:20px;box-shadow:0 6px 18px rgba(232,91,134,.05);transition:.28s;
+}
+.cc-creator:hover{transform:translateY(-5px);box-shadow:var(--cc-shadow-lg);}
+.cc-creator__head{display:flex;align-items:center;gap:12px;margin-bottom:12px;}
+.cc-creator__head .cc-avatar{width:52px;height:52px;font-size:20px;}
+.cc-creator__name{font-size:15.5px;font-weight:700;margin:0;}
+.cc-creator__field{font-size:12px;color:var(--cc-pink-deep);font-weight:600;}
+.cc-creator p{font-size:13px;color:var(--cc-ink-soft);margin:0 0 12px;line-height:1.7;}
+.cc-creator__nums{display:flex;gap:16px;font-size:12px;color:var(--cc-ink-soft);border-top:1px dashed var(--cc-line);padding-top:11px;}
+.cc-creator__nums b{color:var(--cc-ink);font-size:14px;display:block;}
+
+/* ===== 影像墙 ===== */
+.cc-wall{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:150px;gap:14px;}
+.cc-wall__item{
+  position:relative;border-radius:16px;overflow:hidden;box-shadow:0 6px 18px rgba(232,91,134,.08);
+  transition:.3s;
+}
+.cc-wall__item:hover{transform:scale(1.02);box-shadow:var(--cc-shadow-lg);}
+.cc-wall__item svg{width:100%;height:100%;object-fit:cover;}
+.cc-wall__item--lg{grid-column:span 2;grid-row:span 2;}
+.cc-wall__item--md{grid-column:span 2;grid-row:span 1;}
+.cc-wall__cap{
+  position:absolute;left:0;right:0;bottom:0;padding:14px 14px 12px;color:#fff;font-size:12.5px;font-weight:600;
+  background:linear-gradient(transparent,rgba(59,47,58,.72));line-height:1.45;
+}
+
+/* ===== 评论 ===== */
+.cc-reviews{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;}
+.cc-review{
+  background:#fff;border:1px solid var(--cc-line);border-radius:var(--cc-radius);
+  padding:18px 19px;box-shadow:0 5px 16px rgba(232,91,134,.05);display:flex;flex-direction:column;gap:10px;
+}
+.cc-review__top{display:flex;align-items:center;gap:10px;}
+.cc-review__top .cc-avatar{width:34px;height:34px;font-size:13px;}
+.cc-review__who{font-size:13px;font-weight:700;line-height:1.3;}
+.cc-review__when{font-size:11px;color:#a99fa9;}
+.cc-review p{margin:0;font-size:13px;color:var(--cc-ink-soft);line-height:1.75;}
+.cc-review__stars{color:#f7b731;font-size:12px;letter-spacing:2px;}.cc-review__stars .cc-v-muted{color:#e6dde2;}
+.cc-review blockquote{margin:0;padding:0;}
+
+/* ===== 灵感工具 ===== */
+.cc-tools{display:grid;grid-template-columns:1.1fr .9fr;gap:24px;align-items:stretch;}
+.cc-toolbox{
+  background:#fff;border:1px solid var(--cc-line);border-radius:20px;padding:26px;box-shadow:var(--cc-shadow);
+}
+.cc-toolbox h3{margin:0 0 6px;font-size:18px;}
+.cc-toolbox p.cc-sub{margin:0 0 18px;color:var(--cc-ink-soft);font-size:13.5px;}
+.cc-toolbox__chips{display:flex;flex-wrap:wrap;gap:9px;margin-bottom:16px;}
+.cc-toolbox__out{
+  background:var(--cc-pink-soft);border-radius:14px;padding:16px 18px;font-size:13.5px;
+  color:#7a3a52;line-height:1.8;min-height:104px;
+}
+.cc-toolbox__out strong{color:var(--cc-pink-deep);}
+.cc-toolbox__btn{margin-top:14px;}
+.cc-update-list{display:grid;gap:14px;}
+.cc-update{
+  background:#fff;border-left:4px solid var(--cc-pink);border-radius:12px;padding:14px 17px;
+  box-shadow:0 4px 14px rgba(232,91,134,.05);
+}
+.cc-update__date{font-size:11.5px;font-weight:700;color:var(--cc-pink-deep);letter-spacing:.06em;}
+.cc-update__title{font-size:14.5px;font-weight:700;margin:3px 0 4px;}
+.cc-update p{margin:0;font-size:13px;color:var(--cc-ink-soft);}
+
+/* ===== 品牌墙 ===== */
+.cc-partners{display:grid;grid-template-columns:repeat(6,1fr);gap:14px;}
+.cc-partner{
+  background:#fff;border:1px solid var(--cc-line);border-radius:14px;padding:16px 10px;text-align:center;
+  font-size:12.5px;font-weight:600;color:var(--cc-ink-soft);transition:.25s;
+}
+.cc-partner:hover{border-color:#ffc3d5;color:var(--cc-pink-deep);transform:translateY(-3px);}
+.cc-partner__mark{width:30px;height:30px;margin:0 auto 8px;border-radius:9px;background:linear-gradient(140deg,#ffd6e2,#ffb0c8);}
+
+/* ===== FAQ ===== */
+.cc-faq{display:grid;gap:12px;max-width:860px;}
+.cc-faq details{
+  background:#fff;border:1px solid var(--cc-line);border-radius:14px;padding:0 18px;transition:.25s;
+}
+.cc-faq details[open]{border-color:#ffc3d5;box-shadow:var(--cc-shadow);}
+.cc-faq summary{
+  cursor:pointer;list-style:none;padding:16px 0;font-size:14.5px;font-weight:700;
+  display:flex;align-items:center;justify-content:space-between;gap:12px;
+}
+.cc-faq summary::-webkit-details-marker{display:none;}
+.cc-faq summary::after{content:"+";font-size:19px;color:var(--cc-pink-deep);font-weight:400;transition:.25s;}
+.cc-faq details[open] summary::after{transform:rotate(45deg);}
+.cc-faq p{margin:0 0 16px;font-size:13.5px;color:var(--cc-ink-soft);line-height:1.8;}
+
+/* ===== 联系/投稿 ===== */
+.cc-contact{display:grid;grid-template-columns:1fr 1fr;gap:24px;}
+.cc-contact__card{
+  background:linear-gradient(150deg,#fff,#fff5f8);border:1px solid var(--cc-line);border-radius:20px;
+  padding:28px;box-shadow:var(--cc-shadow);
+}
+.cc-contact__card h3{margin:0 0 10px;font-size:19px;}
+.cc-contact__card p{margin:0 0 16px;color:var(--cc-ink-soft);font-size:14px;}
+.cc-contact__list{list-style:none;margin:0;padding:0;display:grid;gap:10px;font-size:13.5px;color:var(--cc-ink-soft);}
+.cc-contact__list b{color:var(--cc-ink);}
+.cc-contact__actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px;}
+
+/* ===== 页脚 ===== */
+.cc-footer{background:#2f2530;color:#cbbfc9;padding:52px 0 0;margin-top:24px;font-size:13.5px;}
+.cc-footer__grid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:30px;padding-bottom:34px;}
+.cc-footer h4{color:#fff;font-size:14px;margin:0 0 12px;font-weight:700;}
+.cc-footer ul{list-style:none;margin:0;padding:0;display:grid;gap:8px;}
+.cc-footer a:hover{color:#ffb6c9;}
+.cc-footer__brand{display:flex;align-items:center;gap:10px;font-weight:800;font-size:17px;color:#fff;margin-bottom:12px;}
+.cc-footer__brand .cc-logo__mark{width:30px;height:30px;}
+.cc-footer__brand .cc-logo__mark::after{inset:8px;}
+.cc-footer__brand .cc-logo__mark::before{left:11px;top:10px;border-left-width:7px;}
+.cc-footer p{margin:0 0 10px;line-height:1.8;}
+.cc-footer__bottom{
+  border-top:1px solid rgba(255,255,255,.10);padding:18px 0;display:flex;flex-wrap:wrap;gap:12px;
+  justify-content:space-between;font-size:12.5px;color:#a497a3;
+}
+
+/* ===== 浮动按钮 / Toast / 弹窗 ===== */
+.cc-totop{
+  position:fixed;right:22px;bottom:26px;width:44px;height:44px;border-radius:50%;
+  background:var(--cc-pink);color:#fff;border:none;display:grid;place-items:center;
+  box-shadow:0 10px 24px rgba(232,91,134,.38);opacity:0;pointer-events:none;transition:.3s;z-index:90;font-size:17px;
+}
+.cc-totop.cc-is-show{opacity:1;pointer-events:auto;}
+.cc-toast{
+  position:fixed;left:50%;bottom:40px;transform:translate(-50%,20px);z-index:300;
+  background:#3b2f3a;color:#fff;font-size:13.5px;padding:11px 22px;border-radius:999px;
+  opacity:0;pointer-events:none;transition:.3s;box-shadow:0 12px 30px rgba(59,47,58,.3);
+}
+.cc-toast.cc-is-show{opacity:1;transform:translate(-50%,0);}
+.cc-modal{
+  position:fixed;inset:0;z-index:240;display:none;align-items:center;justify-content:center;padding:20px;
+  background:rgba(59,47,58,.46);backdrop-filter:blur(3px);
+}
+.cc-modal.cc-is-open{display:flex;}
+.cc-modal__panel{
+  background:#fff;border-radius:20px;max-width:520px;width:100%;padding:28px;position:relative;
+  box-shadow:0 24px 70px rgba(59,47,58,.28);animation:cc-pop .28s ease;
+}
+@keyframes cc-pop{from{transform:translateY(14px) scale(.97);opacity:0;}to{transform:none;opacity:1;}}
+.cc-modal__close{
+  position:absolute;right:14px;top:12px;border:none;background:var(--cc-pink-soft);color:var(--cc-pink-deep);
+  width:30px;height:30px;border-radius:50%;font-size:15px;display:grid;place-items:center;
+}
+.cc-modal__panel h3{margin:0 0 6px;font-size:19px;}
+.cc-modal__panel p.cc-modal__sub{margin:0 0 16px;font-size:13px;color:var(--cc-ink-soft);}
+.cc-modal__panel label{display:block;font-size:13px;font-weight:700;margin:12px 0 5px;}
+.cc-modal__panel input,.cc-modal__panel textarea{
+  width:100%;border:1px solid var(--cc-line);border-radius:11px;padding:10px 13px;font-size:13.5px;
+  font-family:inherit;outline:none;transition:.2s;color:var(--cc-ink);
+}
+.cc-modal__panel input:focus,.cc-modal__panel textarea:focus{border-color:var(--cc-pink);box-shadow:0 0 0 4px rgba(255,127,165,.13);}
+.cc-modal__panel textarea{resize:vertical;min-height:86px;}
+.cc-modal__foot{display:flex;gap:10px;margin-top:18px;}
+.cc-share-row{display:flex;gap:10px;flex-wrap:wrap;margin-top:6px;}
+.cc-share-row button{
+  flex:1;min-width:88px;border:1px solid var(--cc-line);background:#fff;border-radius:12px;
+  padding:11px 8px;font-size:12.5px;font-weight:600;color:var(--cc-ink-soft);transition:.2s;
+}
+.cc-share-row button:hover{border-color:#ffc3d5;color:var(--cc-pink-deep);background:var(--cc-pink-soft);}
+
+/* ===== 响应式 ===== */
+@media (max-width:1000px){
+  .cc-hero__grid{grid-template-columns:1fr;gap:34px;}
+  .cc-focus{grid-template-columns:1fr;}
+  .cc-focus__side{grid-template-columns:1fr 1fr;}
+  .cc-topic-grid{grid-template-columns:1fr 1fr;}
+  .cc-creators{grid-template-columns:1fr 1fr;}
+  .cc-reviews{grid-template-columns:1fr 1fr;}
+  .cc-tools{grid-template-columns:1fr;}
+  .cc-about__grid{grid-template-columns:1fr;}
+  .cc-contact{grid-template-columns:1fr;}
+  .cc-partners{grid-template-columns:repeat(3,1fr);}
+  .cc-footer__grid{grid-template-columns:1fr 1fr;}
+  .cc-wall{grid-template-columns:repeat(2,1fr);}
+  .cc-wall__item--lg{grid-column:span 2;grid-row:span 1;}
+  .cc-wall__item--md{grid-column:span 1;}
+}
+@media (max-width:760px){
+  :root{--cc-announce-h:34px;--cc-header-h:60px;}
+  .cc-nav{
+    display:none;position:absolute;left:0;right:0;top:100%;background:#fff;flex-direction:column;
+    padding:12px 18px;gap:2px;border-bottom:1px solid var(--cc-line);box-shadow:0 18px 30px rgba(232,91,134,.12);
+  }
+  .cc-nav.cc-is-open{display:flex;}
+  .cc-nav a{padding:11px 12px;border-radius:10px;}
+  .cc-header__inner{position:relative;flex-wrap:nowrap;}
+  .cc-burger{display:grid;}
+  .cc-search input{width:120px;}
+  .cc-search input:focus{width:150px;}
+  .cc-section{padding:46px 0;}
+  .cc-focus__side{grid-template-columns:1fr;}
+  .cc-topic-grid{grid-template-columns:1fr;}
+  .cc-creators{grid-template-columns:1fr;}
+  .cc-reviews{grid-template-columns:1fr;}
+  .cc-partners{grid-template-columns:repeat(2,1fr);}
+  .cc-stats{grid-template-columns:1fr;}
+  .cc-footer__grid{grid-template-columns:1fr;}
+  .cc-hero__float--a{left:4px;bottom:-14px;}
+  .cc-hero__float--b{right:4px;top:6px;}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<div class="cc-sticky-wrap">
+  <div class="cc-announce" aria-label="站内公告">
+    <div class="cc-announce__track">
+      <span class="cc-announce__item"><i class="cc-announce__dot"></i>新增内容：《白桃软糖cc的十一月慢食清单》已上线，共 6 集</span>
+      <span class="cc-announce__item"><i class="cc-announce__dot"></i>官方发布：「甜味影像计划」第二季公开征集开始报名</span>
+      <span class="cc-announce__item"><i class="cc-announce__dot"></i>专题更新：城市甜蜜地图新增成都、杭州两条路线</span>
+      <span class="cc-announce__item"><i class="cc-announce__dot"></i>创作者动态：本周新入驻创作者 27 位，欢迎上传作品</span>
+      <span class="cc-announce__item"><i class="cc-announce__dot"></i>新增内容：《白桃软糖cc的十一月慢食清单》已上线，共 6 集</span>
+      <span class="cc-announce__item"><i class="cc-announce__dot"></i>官方发布：「甜味影像计划」第二季公开征集开始报名</span>
+      <span class="cc-announce__item"><i class="cc-announce__dot"></i>专题更新：城市甜蜜地图新增成都、杭州两条路线</span>
+      <span class="cc-announce__item"><i class="cc-announce__dot"></i>创作者动态：本周新入驻创作者 27 位，欢迎上传作品</span>
+    </div>
+  </div>
+
+  <header class="cc-header">
+    <div class="cc-header__inner">
+      <a href="#cc-home" class="cc-logo" aria-label="白桃软糖cc 官方网站首页">
+        <span class="cc-logo__mark" aria-hidden="true"></span>
+        <span>白桃软糖cc</span>
+      </a>
+      <button class="cc-burger" id="ccBurger" aria-label="展开导航菜单" aria-expanded="false" aria-controls="ccNav">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="cc-nav" id="ccNav" aria-label="主导航">
+        <a href="#cc-home">首页</a>
+        <a href="#cc-focus">焦点内容</a>
+        <a href="#cc-topics">专题企划</a>
+        <a href="#cc-creators">创作者</a>
+        <a href="#cc-wall">影像墙</a>
+        <a href="#cc-news">官方动态</a>
+        <a href="#cc-faq">帮助</a>
+        <a href="#cc-contact">联系</a>
+      </nav>
+      <div class="cc-header__tools">
+        <form class="cc-search" id="ccSearchForm" role="search">
+          <input type="search" id="ccSearchInput" placeholder="搜索内容 / 创作者" aria-label="站内搜索">
+          <button type="submit" aria-label="提交搜索">搜</button>
+          <div class="cc-search__hint" id="ccSearchHint" aria-live="polite">
+            <p data-key="慢食">慢食清单 · 6 集短视频</p>
+            <p data-key="城市">城市甜蜜地图 · 专题企划</p>
+            <p data-key="手作">手作软糖实验室 · 教程合集</p>
+            <p data-key="Vlog">Vlog 日常记录 · 创作者专栏</p>
+          </div>
+        </form>
+        <button class="cc-btn cc-btn--sm" id="ccSubmitTop" type="button">投稿</button>
+      </div>
+    </div>
+  </header>
+</div>
+
+<main>
+
+  <!-- 首屏 -->
+  <section class="cc-hero" id="cc-home">
+    <div class="cc-container">
+      <div class="cc-hero__grid">
+        <div>
+          <div class="cc-hero__badges">
+            <span class="cc-badge">官方网站</span>
+            <span class="cc-badge">品牌官方发布</span>
+            <span class="cc-badge">原创内容社区</span>
+          </div>
+          <h1 class="cc-h1">白桃软糖cc</h1>
+          <p class="cc-hero__slogan">把日常的甜，拍成可以收藏的影像</p>
+          <p class="cc-hero__intro">白桃软糖cc 是一家以「甜味生活影像」为核心的视频内容品牌，深耕生活方式与治愈系短内容领域。我们相信甜不是刻意的糖分，而是被认真记录的每一个瞬间。作为持续运营的品牌官网，这里汇集官方原创作品、创作者矩阵与社区企划，为每一位热爱记录的人搭建高品质、值得信赖的内容生态，让真实的温暖被更多人看见。</p>
+          <div class="cc-hero__actions">
+            <a href="#cc-focus" class="cc-btn">浏览焦点内容 ▸</a>
+            <a href="#cc-creators" class="cc-btn cc-btn--ghost">认识创作者</a>
+          </div>
+          <div class="cc-stats">
+            <div class="cc-stat">
+              <div class="cc-stat__num" data-count="1860">0</div>
+              <div class="cc-stat__label">原创影像作品（部）</div>
+            </div>
+            <div class="cc-stat">
+              <div class="cc-stat__num" data-count="248">0</div>
+              <div class="cc-stat__label">入驻创作者（位）</div>
+            </div>
+            <div class="cc-stat">
+              <div class="cc-stat__num" data-count="96">0</div>
+              <div class="cc-stat__label">累计专题企划（期）</div>
+            </div>
+          </div>
+        </div>
+        <div class="cc-hero__visual">
+          <div class="cc-hero__main">
+            <!-- 首屏主视觉 SVG -->
+            <svg viewBox="0 0 640 440" role="img" aria-label="白桃软糖cc 品牌主视觉：窗边桌面上的一盘白桃软糖与影像器材">
+              <defs>
+                <linearGradient id="ccHeroSky" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0" stop-color="#ffeef3"/>
+                  <stop offset=".5" stop-color="#ffdce7"/>
+                  <stop offset="1" stop-color="#f3e7ff"/>
+                </linearGradient>
+                <linearGradient id="ccHeroTable" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0" stop-color="#ffc4a3"/>
+                  <stop offset="1" stop-color="#f0a184"/>
+                </linearGradient>
+                <radialGradient id="ccHeroCandy" cx="35%" cy="30%">
+                  <stop offset="0" stop-color="#fff7fa"/>
+                  <stop offset=".55" stop-color="#ffb8cd"/>
+                  <stop offset="1" stop-color="#f286a9"/>
+                </radialGradient>
+                <radialGradient id="ccHeroCandy2" cx="40%" cy="25%">
+                  <stop offset="0" stop-color="#fffdf6"/>
+                  <stop offset=".6" stop-color="#ffd9b8"/>
+                  <stop offset="1" stop-color="#f5b083"/>
+                </radialGradient>
+                <linearGradient id="ccHeroWindow" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0" stop-color="#d7ecff"/>
+                  <stop offset="1" stop-color="#f6fbff"/>
+                </linearGradient>
+              </defs>
+              <rect width="640" height="440" fill="url(#ccHeroSky)"/>
+              <rect x="352" y="26" width="240" height="216" rx="18" fill="url(#ccHeroWindow)"/>
+              <rect x="352" y="26" width="240" height="216" rx="18" fill="none" stroke="#ffffff" stroke-width="8"/>
+              <path d="M472 26v216M352 134h240" stroke="#ffffff" stroke-width="7"/>
+              <circle cx="406" cy="86" r="24" fill="#ffe9a8" opacity=".85"/>
+              <path d="M0 300h640v140H0z" fill="url(#ccHeroTable)"/>
+              <ellipse cx="230" cy="306" rx="188" ry="34" fill="#e58e6f" opacity=".38"/>
+              <ellipse cx="252" cy="292" rx="150" ry="26" fill="#fff6f1"/>
+              <circle cx="176" cy="276" r="34" fill="url(#ccHeroCandy)"/>
+              <circle cx="238" cy="266" r="30" fill="url(#ccHeroCandy2)"/>
+              <circle cx="294" cy="278" r="27" fill="url(#ccHeroCandy)"/>
+              <circle cx="206" cy="240" r="25" fill="url(#ccHeroCandy2)"/>
+              <circle cx="262" cy="232" r="22" fill="url(#ccHeroCandy)"/>
+              <circle cx="170" cy="250" r="8" fill="#ffffff" opacity=".7"/>
+              <circle cx="236" cy="250" r="6" fill="#ffffff" opacity=".65"/>
+              <circle cx="290" cy="262" r="5" fill="#ffffff" opacity=".6"/>
+              <path d="M158 224c8-14 26-18 38-10" stroke="#8dc99a" stroke-width="5" fill="none" stroke-linecap="round"/>
+              <ellipse cx="164" cy="227" rx="13" ry="7" fill="#8dc99a" transform="rotate(-24 164 227)"/>
+              <rect x="418" y="238" width="140" height="88" rx="12" fill="#4a3b47"/>
+              <rect x="432" y="220" width="42" height="26" rx="6" fill="#5d4b57"/>
+              <circle cx="466" cy="284" r="30" fill="#2f2530"/>
+              <circle cx="466" cy="284" r="20" fill="#8f7d8b"/>
+              <circle cx="460" cy="278" r="7" fill="#ffffff" opacity=".8"/>
+              <rect x="418" y="318" width="140" height="10" rx="5" fill="#6a5763"/>
+              <circle cx="524" cy="252" r="9" fill="#ff7fa5"/>
+              <path d="M40 396c60-16 130-16 190 0" stroke="#e78f74" stroke-width="4" fill="none" opacity=".45"/>
+              <text x="60" y="76" font-size="19" fill="#e85b86" font-family="sans-serif" font-weight="700" opacity=".85">SWEET FRAME</text>
+              <text x="60" y="100" font-size="12" fill="#b48b9b" font-family="sans-serif" letter-spacing="3">白桃软糖cc 影像日常</text>
+            </svg>
+          </div>
+          <div class="cc-hero__float cc-hero__float--a">
+            <span class="cc-avatar cc-avatar--pink">桃</span>
+            <div>
+              <div style="font-weight:700;line-height:1.3">今日更新 · 3 部</div>
+              <div style="font-size:11.5px;color:#6f6270">甜味影像持续上新</div>
+            </div>
+          </div>
+          <div class="cc-hero__float cc-hero__float--b">
+            <span class="cc-play">▶</span>
+            <div>
+              <div style="font-weight:700;line-height:1.3">124.6 万</div>
+              <div style="font-size:11.5px;color:#6f6270">本月影像播放</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 深度解析 -->
+  <section class="cc-section cc-section--alt" id="cc-about">
+    <div class="cc-container">
+      <span class="cc-kicker">ABOUT THE BRAND</span>
+      <h2 class="cc-h2">关于白桃软糖cc：一个把「甜」做成内容方法的影像品牌</h2>
+      <p class="cc-lede">从一颗软糖的颜色出发，我们把镜头对准生活里容易忽略的温度，让每一段素材都拥有被反复观看的理由。</p>
+      <div class="cc-about__grid">
+        <article class="cc-about__article">
+          <p><strong>白桃软糖cc</strong> 最初的形态，是一个由三位影像爱好者共同维护的小型拍摄计划。2019 年冬天，我们在出租屋的窗台上拍下第一支短片：一枚半透明的白桃软糖放在窗边，阳光穿过糖体，在桌面上投出一小块粉色的影子。那条片长 47 秒的视频没有旁白、没有配乐高潮，却在社区里被反复转发。很多留言说，看完之后想去买一包软糖，也想去认真看看自己窗台上的光。这件事让我们意识到，所谓「甜」并不是内容题材，而是一种观察世界的方式——把复杂的情绪拆成可以被看见的小细节，再温柔地递还给观众。</p>
+          <p>此后六年，白桃软糖cc 逐步从个人拍摄计划，成长为持续运营的原创内容品牌。我们的<strong>官方网站</strong>不只是作品陈列柜，更是内容生态的中枢：官方原创栏目在这里首播，创作者在这里上传作品、参与企划、接受来自社区的真实反馈；企业合作方则通过官方通道了解品牌调性、内容标准与合作流程。平台坚持正版、高清、原创的内容原则，所有上线作品均经过选题、画面、声音三个维度的编辑审核，确保每一次点击都值得。</p>
+          <p>我们把内容划分为四条主线。<strong>第一条是「甜味日常」</strong>，记录一人食、换季收纳、周末散步这类微小而具体的生活片段，强调真实与陪伴；<strong>第二条是「手作实验室」</strong>，围绕软糖、果酱、烘焙等轻手作展开教程与失败复盘，把过程而不是结果作为看点；<strong>第三条是「城市甜蜜地图」</strong>，走进不同城市的老街、甜品店与菜市场，用在地视角观察一座城市如何对待「甜」；<strong>第四条是「创作者访谈」</strong>，请来摄影师、甜品师、插画师与普通记录者，聊他们为什么开始拍，以及如何坚持。</p>
+          <p>在内容生态的建设上，白桃软糖cc 采取「官方栏目 + 创作者共建」的双轨结构。官方团队负责企划发起、标准制定与品质把控，创作者则贡献风格各异的表达。我们为新人提供选题建议、剪辑思路与封面规范，也定期举办征集与挑战活动，让好作品被看见的路径更短。平台设有创作者成长档案，记录每位作者的更新节奏与社区口碑，帮助品牌合作方找到气质匹配的伙伴，也让创作者的努力获得可持续的回报。</p>
+          <p>作为在生活方式影像垂直领域深耕多年的品牌，我们更在意「影响力」的质地而非数量。一次关于食物浪费的短片，促成了社区里一场持续三个月的「零浪费厨房」打卡；一期关于独居青年晚餐的访谈，让许多观众在评论区第一次说出自己的孤独。这些真实的回响，构成了白桃软糖cc 最看重的资产。我们相信，企业社会责任不必宏大，把每一件小事拍清楚、讲明白，本身就是一种力量。</p>
+          <p>如今，白桃软糖cc 已形成稳定的更新节奏：每周一「甜味日常」，周三「手作实验室」，周五「创作者访谈」，每月一期专题企划。我们仍在持续运营与迭代，欢迎更多创作者加入，也欢迎品牌与机构通过官方渠道联系我们。无论你是想找一份安静的陪伴，还是寻找可靠的合作方，这里都值得你停留片刻。</p>
+        </article>
+        <aside class="cc-about__aside">
+          <div class="cc-mini">
+            <h3 class="cc-mini__title"><i></i>品牌定位</h3>
+            <p>生活方式影像品牌与原创内容社区，专注治愈系短内容与创作者生态建设。</p>
+          </div>
+          <div class="cc-mini">
+            <h3 class="cc-mini__title"><i></i>内容原则</h3>
+            <p>原创、正版、高清；不追逐猎奇，不制造焦虑，以真实细节换取长期信任。</p>
+          </div>
+          <div class="cc-mini">
+            <h3 class="cc-mini__title"><i></i>运营节奏</h3>
+            <p>每周三更，每月一期专题企划，每季度一次创作者公开征集，全年持续运营。</p>
+          </div>
+          <div class="cc-mini">
+            <h3 class="cc-mini__title"><i></i>核心关键词</h3>
+            <div class="cc-tagline">
+              <span class="cc-tag">甜味日常</span>
+              <span class="cc-tag">手作教程</span>
+              <span class="cc-tag">城市探索</span>
+              <span class="cc-tag">创作者访谈</span>
+              <span class="cc-tag">原创正版</span>
+              <span class="cc-tag">内容生态</span>
+            </div>
+          </div>
+          <div class="cc-mini">
+            <h3 class="cc-mini__title"><i></i>适合谁看</h3>
+            <p>喜欢慢节奏影像的观众、正在寻找选题灵感的创作者、希望进行内容共创的品牌方。</p>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- 焦点内容 -->
+  <section class="cc-section" id="cc-focus">
+    <div class="cc-container">
+      <span class="cc-kicker">FEATURED</span>
+      <h2 class="cc-h2">焦点内容：本周值得停留的影像</h2>
+      <p class="cc-lede">由官方编辑团队与社区口碑共同选出的六部作品，涵盖日常记录、手作教程与人物访谈，每一部都经过画面与声音的双重打磨。</p>
+      <div class="cc-focus">
+        <article class="cc-vcard cc-vcard--big">
+          <div class="cc-vcard__cover">
+            <svg viewBox="0 0 640 360" role="img" aria-label="焦点视频封面：午后窗边一杯白桃气泡水与翻开的笔记本">
+              <defs>
+                <linearGradient id="ccF1" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0" stop-color="#ffe6ee"/>
+                  <stop offset="1" stop-color="#ffc9dc"/>
+                </linearGradient>
+              </defs>
+              <rect width="640" height="360" fill="url(#ccF1)"/>
+              <rect x="0" y="240" width="640" height="120" fill="#f6c9a8"/>
+              <rect x="0" y="236" width="640" height="10" fill="#efb98f"/>
+              <rect x="96" y="92" width="150" height="140" rx="10" fill="#ffffff" opacity=".62"/>
+              <path d="M110 108h122M110 130h122M110 152h96M110 174h110M110 196h84" stroke="#f2a8c0" stroke-width="6" stroke-linecap="round"/>
+              <path d="M330 118h74v92a20 20 0 0 1-20 20h-34a20 20 0 0 1-20-20z" fill="#ffffff" opacity=".9"/>
+              <path d="M330 148h74v62a20 20 0 0 1-20 20h-34a20 20 0 0 1-20-20z" fill="#ffb3c9"/>
+              <circle cx="342" cy="126" r="7" fill="#fff" opacity=".85"/>
+              <circle cx="388" cy="121" r="5" fill="#fff" opacity=".7"/>
+              <path d="M404 158c22-4 30 14 20 28" stroke="#ffffff" stroke-width="7" fill="none" stroke-linecap="round"/>
+              <circle cx="228" cy="266" r="24" fill="#ffd6c0"/>
+              <circle cx="290" cy="272" r="18" fill="#fff0f5"/>
+              <path d="M470 210c18-24 52-24 68 0" stroke="#8dc99a" stroke-width="6" fill="none" stroke-linecap="round"/>
+              <circle cx="506" cy="196" r="10" fill="#ffe08a"/>
+              <rect x="490" y="222" width="86" height="16" rx="8" fill="#e58e6f" opacity=".6"/>
+            </svg>
+            <span class="cc-vcard__tag">官方原创</span>
+            <span class="cc-vcard__time">08:42</span>
+            <span class="cc-vcard__play">▶</span>
+          </div>
+          <div class="cc-vcard__body">
+            <h3 class="cc-vcard__title">午后三点的白桃气泡水：一个人也要认真过的下午</h3>
+            <p class="cc-vcard__desc">从洗一颗白桃开始，到气泡在杯壁上爬升、笔记本翻到新的一页，完整记录一个不赶时间的午后。全片自然光拍摄，保留环境声与窗外的风。</p>
+            <div class="cc-vcard__meta">
+              <span class="cc-avatar cc-avatar--pink">桃</span>
+              <span>白桃软糖cc 官方 · 2 天前</span>
+              <span style="margin-left:auto">▶ 12.8 万</span>
+            </div>
+            <div class="cc-vcard__actions">
+              <button class="cc-chip" data-like type="button">♡ 喜欢 <b>0</b></button>
+              <button class="cc-chip" data-fav type="button">☆ 收藏</button>
+              <button class="cc-chip" data-comment type="button">评论 86</button>
+              <button class="cc-chip" data-share type="button">分享</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="cc-vcard cc-vcard--big">
+          <div class="cc-vcard__cover">
+            <svg viewBox="0 0 640 360" role="img" aria-label="焦点视频封面：手作软糖实验室操作台上分层的草莓与抹茶软糖">
+              <defs>
+                <linearGradient id="ccF2" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0" stop-color="#eef6ee"/>
+                  <stop offset="1" stop-color="#d8ecd8"/>
+                </linearGradient>
+              </defs>
+              <rect width="640" height="360" fill="url(#ccF2)"/>
+              <rect x="0" y="252" width="640" height="108" fill="#d9b88f"/>
+              <rect x="0" y="248" width="640" height="8" fill="#c9a678"/>
+              <rect x="80" y="86" width="200" height="150" rx="14" fill="#ffffff" opacity=".8"/>
+              <rect x="104" y="106" width="152" height="18" rx="9" fill="#ffc2d3"/>
+              <rect x="104" y="134" width="152" height="18" rx="9" fill="#b7e4b7"/>
+              <rect x="104" y="162" width="152" height="18" rx="9" fill="#ffe08a"/>
+              <rect x="104" y="190" width="98" height="18" rx="9" fill="#c9b8ff"/>
+              <circle cx="348" cy="196" r="46" fill="#f28aa6"/>
+              <circle cx="348" cy="196" r="34" fill="#ffd0dd"/>
+              <path d="M348 152c6-16 22-20 30-14-4 14-18 18-30 14z" fill="#8dc99a"/>
+              <circle cx="450" cy="208" r="34" fill="#e9f5d9"/>
+              <circle cx="450" cy="208" r="22" fill="#b7d98f"/>
+              <rect x="500" y="176" width="14" height="96" rx="7" fill="#c9a678"/>
+              <path d="M514 190c26-6 40 10 36 26-14 2-30-8-36-26z" fill="#b7d98f"/>
+              <circle cx="286" cy="238" r="10" fill="#ffffff" opacity=".9"/>
+              <circle cx="470" cy="128" r="12" fill="#ffe08a"/>
+            </svg>
+            <span class="cc-vcard__tag">教程干货</span>
+            <span class="cc-vcard__time">12:15</span>
+            <span class="cc-vcard__play">▶</span>
+          </div>
+          <div class="cc-vcard__body">
+            <h3 class="cc-vcard__title">手作软糖实验室 01：四次失败后，我总结出的家庭版凝固比例</h3>
+            <p class="cc-vcard__desc">不藏失败镜头。从温度计读数到冷藏时长，逐条复盘草莓与抹茶双层的配方调整，附带可保存的比例表与常见问题对照。</p>
+            <div class="cc-vcard__meta">
+              <span class="cc-avatar cc-avatar--mint">糖</span>
+              <span>糖霜研究所 · 4 天前</span>
+              <span style="margin-left:auto">▶ 9.6 万</span>
+            </div>
+            <div class="cc-vcard__actions">
+              <button class="cc-chip" data-like type="button">♡ 喜欢 <b>0</b></button>
+              <button class="cc-chip" data-fav type="button">☆ 收藏</button>
+              <button class="cc-chip" data-comment type="button">评论 142</button>
+              <button class="cc-chip" data-share type="button">分享</button>
+            </div>
+          </div>
+        </article>
+
+        <div class="cc-focus__side">
+          <article class="cc-vcard cc-vcard--mini">
+            <div class="cc-vcard__cover">
+              <svg viewBox="0 0 640 360" role="img" aria-label="视频封面：城市老巷里一家亮着暖灯的甜品铺">
+                <rect width="640" height="360" fill="#ffd9b8"/>
+                <rect x="0" y="230" width="640" height="130" fill="#b98a63"/>
+                <rect x="60" y="70" width="230" height="160" rx="8" fill="#f6ead9"/>
+                <rect x="96" y="104" width="72" height="90" rx="6" fill="#ffcf8a"/>
+                <rect x="196" y="104" width="58" height="90" rx="6" fill="#ffe6b8"/>
+                <path d="M330 230v-90h190v90z" fill="#e8ab7b"/>
+                <path d="M316 132h218l-18-34H334z" fill="#ff9f74"/>
+                <circle cx="390" cy="186" r="24" fill="#fff3d6"/>
+                <circle cx="470" cy="186" r="24" fill="#fff3d6"/>
+                <rect x="350" y="200" width="150" height="30" fill="#c9805a"/>
+                <circle cx="602" cy="58" r="26" fill="#ffe08a" opacity=".85"/>
+              </svg>
+              <span class="cc-vcard__tag">城市探索</span>
+              <span class="cc-vcard__time">06:08</span>
+              <span class="cc-vcard__play">▶</span>
+            </div>
+            <div class="cc-vcard__body">
+              <h3 class="cc-vcard__title">巷子尽头的那家糖水铺，开了三十七年</h3>
+              <p class="cc-vcard__desc">跟着老板学一碗姜撞奶，也听他讲这条街的变化。</p>
+              <div class="cc-vcard__meta">
+                <span class="cc-avatar cc-avatar--peach">街</span>
+                <span>街角记录者</span>
+              </div>
+              <div class="cc-vcard__actions">
+                <button class="cc-chip" data-like type="button">♡ 喜欢 <b>0</b></button>
+                <button class="cc-chip" data-share type="button">分享</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="cc-vcard cc-vcard--mini">
+            <div class="cc-vcard__cover">
+              <svg viewBox="0 0 640 360" role="img" aria-label="视频封面：插画师工作台上的色卡与未完成的甜点插画">
+                <rect width="640" height="360" fill="#f3e7ff"/>
+                <rect x="0" y="248" width="640" height="112" fill="#e6d3f7"/>
+                <rect x="70" y="90" width="220" height="160" rx="10" fill="#ffffff"/>
+                <circle cx="150" cy="160" r="34" fill="#ffb8cd"/>
+                <circle cx="150" cy="160" r="20" fill="#fff0f5"/>
+                <path d="M206 190c22-26 54-22 66 4" stroke="#c9b8ff" stroke-width="8" fill="none" stroke-linecap="round"/>
+                <rect x="240" y="130" width="70" height="14" rx="7" fill="#ffd9b8"/>
+                <rect x="240" y="154" width="52" height="14" rx="7" fill="#c9b8ff"/>
+                <circle cx="392" cy="150" r="26" fill="#ffe08a"/>
+                <circle cx="452" cy="176" r="20" fill="#ffb8cd"/>
+                <circle cx="508" cy="146" r="16" fill="#a9e6d4"/>
+                <path d="M356 246h220" stroke="#c9b8ff" stroke-width="6" stroke-linecap="round"/>
+                <path d="M400 246v-58" stroke="#a992d9" stroke-width="8" stroke-linecap="round"/>
+                <path d="M470 246v-88" stroke="#a992d9" stroke-width="8" stroke-linecap="round"/>
+              </svg>
+              <span class="cc-vcard__tag">人物访谈</span>
+              <span class="cc-vcard__time">15:20</span>
+              <span class="cc-vcard__play">▶</span>
+            </div>
+            <div class="cc-vcard__body">
+              <h3 class="cc-vcard__title">插画师阿柚：我把厨房画成了糖果色</h3>
+              <p class="cc-vcard__desc">聊创作习惯、配色方法，以及如何面对瓶颈期。</p>
+              <div class="cc-vcard__meta">
+                <span class="cc-avatar cc-avatar--lilac">柚</span>
+                <span>白桃软糖cc 官方</span>
+              </div>
+              <div class="cc-vcard__actions">
+                <button class="cc-chip" data-like type="button">♡ 喜欢 <b>0</b></button>
+                <button class="cc-chip" data-share type="button">分享</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="cc-vcard cc-vcard--mini">
+            <div class="cc-vcard__cover">
+              <svg viewBox="0 0 640 360" role="img" aria-label="视频封面：清晨阳台上晾晒的果干与玻璃罐">
+                <rect width="640" height="360" fill="#e8f3ff"/>
+                <rect x="0" y="240" width="640" height="120" fill="#c9dff0"/>
+                <rect x="112" y="86" width="120" height="150" rx="12" fill="#ffffff" opacity=".85"/>
+                <path d="M112 114h120M112 142h120M112 170h120" stroke="#ffd0dd" stroke-width="7"/>
+                <rect x="290" y="130" width="84" height="106" rx="14" fill="#ffffff" opacity=".7"/>
+                <circle cx="318" cy="164" r="13" fill="#ffb36b"/>
+                <circle cx="344" cy="190" r="11" fill="#f7c543"/>
+                <circle cx="316" cy="206" r="10" fill="#ff9f74"/>
+                <circle cx="330" cy="148" r="6" fill="#ffffff" opacity=".9"/>
+                <path d="M406 236v-70h96v70z" fill="#ffffff" opacity=".75"/>
+                <circle cx="454" cy="196" r="20" fill="#ffd6c0"/>
+                <path d="M520 130c22 12 30 34 22 54" stroke="#8dc99a" stroke-width="6" fill="none" stroke-linecap="round"/>
+                <circle cx="562" cy="76" r="22" fill="#ffe08a" opacity=".8"/>
+              </svg>
+              <span class="cc-vcard__tag">日常记录</span>
+              <span class="cc-vcard__time">04:36</span>
+              <span class="cc-vcard__play">▶</span>
+            </div>
+            <div class="cc-vcard__body">
+              <h3 class="cc-vcard__title">晒一罐果干，把秋天的太阳收进柜子</h3>
+              <p class="cc-vcard__desc">阳台、玻璃罐与慢下来的上午，一支几乎没有台词的记录。</p>
+              <div class="cc-vcard__meta">
+                <span class="cc-avatar cc-avatar--butter">晴</span>
+                <span>晴天慢放</span>
+              </div>
+              <div class="cc-vcard__actions">
+                <button class="cc-chip" data-like type="button">♡ 喜欢 <b>0</b></button>
+                <button class="cc-chip" data-share type="button">分享</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="cc-vcard cc-vcard--mini">
+            <div class="cc-vcard__cover">
+              <svg viewBox="0 0 640 360" role="img" aria-label="视频封面：夜晚书店阅读区的一盏台灯与打开的书">
+                <rect width="640" height="360" fill="#3b3348"/>
+                <rect x="0" y="250" width="640" height="110" fill="#2b2438"/>
+                <circle cx="320" cy="120" r="86" fill="#5a4d6b" opacity=".6"/>
+                <rect x="150" y="180" width="240" height="14" rx="7" fill="#6a5a7d"/>
+                <path d="M180 180l40-70h150l40 70z" fill="#ffd9b8" opacity=".22"/>
+                <rect x="256" y="96" width="34" height="82" rx="8" fill="#ffe08a"/>
+                <path d="M276 178l-26 74h88l-26-74z" fill="#ffd9b8" opacity=".35"/>
+                <path d="M440 200c26-30 60-24 76 4" stroke="#ffb8cd" stroke-width="6" fill="none" stroke-linecap="round"/>
+                <rect x="426" y="206" width="104" height="44" rx="8" fill="#ffb8cd" opacity=".7"/>
+                <circle cx="118" cy="86" r="18" fill="#ffe08a" opacity=".7"/>
+                <circle cx="546" cy="66" r="10" fill="#ffffff" opacity=".55"/>
+              </svg>
+              <span class="cc-vcard__tag">治愈影像</span>
+              <span class="cc-vcard__time">09:54</span>
+              <span class="cc-vcard__play">▶</span>
+            </div>
+            <div class="cc-vcard__body">
+              <h3 class="cc-vcard__title">在书店待到打烊：关于独处的十二分钟</h3>
+              <p class="cc-vcard__desc">没有旁白，只有翻页声和远处的雨，适合睡前的安静观看。</p>
+              <div class="cc-vcard__meta">
+                <span class="cc-avatar cc-avatar--sky">夜</span>
+                <span>夜航影像</span>
+              </div>
+              <div class="cc-vcard__actions">
+                <button class="cc-chip" data-like type="button">♡ 喜欢 <b>0</b></button>
+                <button class="cc-chip" data-share type="button">分享</button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 专题企划 -->
+  <section class="cc-section cc-section--alt" id="cc-topics">
+    <div class="cc-container">
+      <span class="cc-kicker">SERIES</span>
+      <h2 class="cc-h2">专题企划：把零散的甜，收束成一条线索</h2>
+      <p class="cc-lede">每期专题由官方发起、社区共建，从选题到成片历时四到六周，持续更新中，欢迎参与投票与投稿。</p>
+      <div class="cc-topic-grid">
+        <article class="cc-topic">
+          <div>
+            <span class="cc-topic__status">持续更新中</span>
+            <h3>甜味影像计划 第二季</h3>
+            <p>面向所有记录者开放，围绕「我生活里的一件甜事」提交三分钟以内的原创短片。本季新增手机拍摄单元与新人扶持名额，报名通道已开启。</p>
+          </div>
+          <div class="cc-topic__foot"><span>已收到 386 份投稿</span><span>查看企划 ›</span></div>
+        </article>
+        <article class="cc-topic">
+          <div>
+            <span class="cc-topic__status">更新至第 12 期</span>
+            <h3>城市甜蜜地图</h3>
+            <p>走进不同城市的老街与甜品铺，用在地视角记录一座城市如何对待「甜」。已更新成都、杭州、泉州、汕头，每期附步行路线与拍摄攻略。</p>
+          </div>
+          <div class="cc-topic__foot"><span>12 座城市</span><span>查看企划 ›</span></div>
+        </article>
+        <article class="cc-topic">
+          <div>
+            <span class="cc-topic__status">连载中</span>
+            <h3>手作实验室 四季篇</h3>
+            <p>春夏秋冬各做一款对应节气的软糖与果酱。每一集都保留失败镜头与配方调整过程，配套可下载的比例表，适合在家复现。</p>
+          </div>
+          <div class="cc-topic__foot"><span>已更新 9 集</span><span>查看企划 ›</span></div>
+        </article>
+        <article class="cc-topic">
+          <div>
+            <span class="cc-topic__status">征集阶段</span>
+            <h3>创作者对谈：我们为什么开始拍</h3>
+            <p>镜头背后的动力往往比成片更动人。本专题征集创作者自述，选出二十位进行深度访谈，以双机位呈现真实的表达与困惑。</p>
+          </div>
+          <div class="cc-topic__foot"><span>剩余 9 天</span><span>参与征集 ›</span></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 创作者矩阵 -->
+  <section class="cc-section" id="cc-creators">
+    <div class="cc-container">
+      <span class="cc-kicker">CREATORS</span>
+      <h2 class="cc-h2">创作者矩阵：不同风格的甜，来自不同的人</h2>
+      <p class="cc-lede">白桃软糖cc 的内容生态由官方团队与入驻创作者共同构成。以下五位是长期陪伴平台成长的代表作者，他们的作品共同定义了这里的质感。</p>
+      <div class="cc-creators">
+        <article class="cc-creator">
+          <div class="cc-creator__head">
+            <span class="cc-avatar cc-avatar--pink">桃</span>
+            <div>
+              <h3 class="cc-creator__name">白桃软糖cc 官方</h3>
+              <div class="cc-creator__field">品牌官方 · 生活方式影像</div>
+            </div>
+          </div>
+          <p>官方主账号，负责「甜味日常」与「创作者访谈」两档栏目。坚持自然光与现场声，尽量减少配乐对情绪的干预，希望观众看到的是生活本来的节奏。</p>
+          <div class="cc-creator__nums">
+            <span><b>418</b>作品</span>
+            <span><b>126 万</b>关注</span>
+            <span><b>官方</b>认证</span>
+          </div>
+        </article>
+        <article class="cc-creator">
+          <div class="cc-creator__head">
+            <span class="cc-avatar cc-avatar--mint">糖</span>
+            <div>
+              <h3 class="cc-creator__name">糖霜研究所</h3>
+              <div class="cc-creator__field">手作教程 · 甜点实验</div>
+            </div>
+          </div>
+          <p>前甜品店研发师，擅长把专业配方翻译成家庭可执行的操作。视频里最常出现的不是成品，而是温度计和失败品，被社区称为「最诚实的教程作者」。</p>
+          <div class="cc-creator__nums">
+            <span><b>96</b>作品</span>
+            <span><b>34.2 万</b>关注</span>
+            <span><b>口碑</b>作者</span>
+          </div>
+        </article>
+        <article class="cc-creator">
+          <div class="cc-creator__head">
+            <span class="cc-avatar cc-avatar--peach">街</span>
+            <div>
+              <h3 class="cc-creator__name">街角记录者</h3>
+              <div class="cc-creator__field">城市探索 · 在地文化</div>
+            </div>
+          </div>
+          <p>十年街头摄影经验，转做短视频后依然保留抓拍习惯。擅长在十几分钟里呈现一家小店与一条街的关系，作品多为长镜头与现场收音。</p>
+          <div class="cc-creator__nums">
+            <span><b>172</b>作品</span>
+            <span><b>48.6 万</b>关注</span>
+            <span><b>城市</b>推荐</span>
+          </div>
+        </article>
+        <article class="cc-creator">
+          <div class="cc-creator__head">
+            <span class="cc-avatar cc-avatar--lilac">柚</span>
+            <div>
+              <h3 class="cc-creator__name">插画师阿柚</h3>
+              <div class="cc-creator__field">艺术美学 · 创作幕后</div>
+            </div>
+          </div>
+          <p>自由插画师，把厨房、餐具与甜点画成糖果色系列。视频主要记录创作过程与配色思路，也乐于公开自己的瓶颈期和废稿，鼓励观众开始动手。</p>
+          <div class="cc-creator__nums">
+            <span><b>64</b>作品</span>
+            <span><b>22.8 万</b>关注</span>
+            <span><b>新人</b>推荐</span>
+          </div>
+        </article>
+        <article class="cc-creator">
+          <div class="cc-creator__head">
+            <span class="cc-avatar cc-avatar--sky">夜</span>
+            <div>
+              <h3 class="cc-creator__name">夜航影像</h3>
+              <div class="cc-creator__field">治愈影像 · 环境声记录</div>
+            </div>
+          </div>
+          <p>专注夜间与安静场景的声音采集，作品几乎没有旁白，靠环境声推动情绪。常被观众当作睡前陪伴，也被多家音频平台邀请制作声音专辑。</p>
+          <div class="cc-creator__nums">
+            <span><b>118</b>作品</span>
+            <span><b>29.4 万</b>关注</span>
+            <span><b>声音</b>专栏</span>
+          </div>
+        </article>
+        <article class="cc-creator">
+          <div class="cc-creator__head">
+            <span class="cc-avatar cc-avatar--butter">晴</span>
+            <div>
+              <h3 class="cc-creator__name">晴天慢放</h3>
+              <div class="cc-creator__field">日常记录 · 慢生活</div>
+            </div>
+          </div>
+          <p>全职妈妈，用碎片时间记录阳台、孩子与四季食物。剪辑节奏舒缓，画面多为固定机位，评论区常有人说「看完想去做一顿饭」。</p>
+          <div class="cc-creator__nums">
+            <span><b>203</b>作品</span>
+            <span><b>41.7 万</b>关注</span>
+            <span><b>陪伴</b>标签</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 影像墙 -->
+  <section class="cc-section cc-section--alt" id="cc-wall">
+    <div class="cc-container">
+      <span class="cc-kicker">GALLERY</span>
+      <h2 class="cc-h2">影像墙：社区本月精选的九个瞬间</h2>
+      <p class="cc-lede">由社区投票与编辑推荐共同产生，尺寸与题材各不相同，但都保有同一种克制而真实的表达。</p>
+      <div class="cc-wall">
+        <div class="cc-wall__item cc-wall__item--lg">
+          <svg viewBox="0 0 640 640" role="img" aria-label="影像墙大图：窗台上的白桃与玻璃糖罐，逆光拍摄">
+            <rect width="640" height="640" fill="#ffe3ec"/>
+            <rect x="0" y="430" width="640" height="210" fill="#e8b08c"/>
+            <rect x="96" y="120" width="200" height="250" rx="16" fill="#ffffff" opacity=".55"/>
+            <circle cx="196" cy="250" r="52" fill="#ffb8cd"/>
+            <circle cx="196" cy="250" r="34" fill="#fff3f7"/>
+            <path d="M196 198c8-22 30-26 42-18-6 20-26 24-42 18z" fill="#8dc99a"/>
+            <rect x="356" y="300" width="150" height="150" rx="18" fill="#ffffff" opacity=".72"/>
+            <circle cx="396" cy="356" r="18" fill="#ffb8cd"/>
+            <circle cx="436" cy="384" r="14" fill="#ffd9b8"/>
+            <circle cx="462" cy="344" r="16" fill="#c9b8ff"/>
+            <circle cx="410" cy="412" r="12" fill="#ffe08a"/>
+            <path d="M120 480h420" stroke="#c98a63" stroke-width="8" stroke-linecap="round"/>
+            <circle cx="540" cy="90" r="34" fill="#ffe08a" opacity=".8"/>
+          </svg>
+          <span class="cc-wall__cap">窗台上的白桃与糖罐 · 逆光练习</span>
+        </div>
+        <div class="cc-wall__item cc-wall__item--md">
+          <svg viewBox="0 0 640 320" role="img" aria-label="影像墙图片：厨房台面上的烘焙工具与面粉痕迹">
+            <rect width="640" height="320" fill="#f6ead9"/>
+            <rect x="0" y="228" width="640" height="92" fill="#d9b88f"/>
+            <rect x="70" y="80" width="130" height="140" rx="10" fill="#ffffff" opacity=".8"/>
+            <path d="M92 106h86M92 130h86M92 154h62" stroke="#d9b88f" stroke-width="7" stroke-linecap="round"/>
+            <circle cx="286" cy="176" r="38" fill="#ffd0dd"/>
+            <circle cx="286" cy="176" r="24" fill="#fff0f5"/>
+            <rect x="356" y="136" width="86" height="84" rx="10" fill="#c9a678"/>
+            <path d="M372 136v-22h54v22" stroke="#a57f52" stroke-width="8" fill="none"/>
+            <circle cx="520" cy="150" r="28" fill="#ffe08a"/>
+          </svg>
+          <span class="cc-wall__cap">烘焙台 · 面粉与木勺</span>
+        </div>
+        <div class="cc-wall__item">
+          <svg viewBox="0 0 320 320" role="img" aria-label="影像墙图片：一杯拉花咖啡的俯拍">
+            <rect width="320" height="320" fill="#e6d3f7"/>
+            <circle cx="160" cy="160" r="96" fill="#ffffff"/>
+            <circle cx="160" cy="160" r="72" fill="#c98a63"/>
+            <path d="M160 118c18 20 18 64 0 84-18-20-18-64 0-84z" fill="#f6ead9"/>
+            <circle cx="160" cy="160" r="14" fill="#c98a63"/>
+            <circle cx="62" cy="62" r="16" fill="#ffb8cd"/>
+            <circle cx="258" cy="262" r="12" fill="#ffe08a"/>
+          </svg>
+          <span class="cc-wall__cap">拉花练习第 41 次</span>
+        </div>
+        <div class="cc-wall__item">
+          <svg viewBox="0 0 320 320" role="img" aria-label="影像墙图片：傍晚街边的暖黄路灯与行人剪影">
+            <rect width="320" height="320" fill="#4a3b47"/>
+            <rect x="0" y="238" width="320" height="82" fill="#2f2530"/>
+            <rect x="140" y="60" width="12" height="180" fill="#6a5763"/>
+            <circle cx="146" cy="60" r="30" fill="#ffe08a" opacity=".8"/>
+            <circle cx="146" cy="60" r="52" fill="#ffe08a" opacity=".16"/>
+            <path d="M66 238c0-26 20-44 44-44s44 18 44 44z" fill="#6a5763"/>
+            <path d="M196 238c0-20 15-34 33-34s33 14 33 34z" fill="#6a5763"/>
+            <circle cx="272" cy="58" r="8" fill="#ffffff" opacity=".6"/>
+          </svg>
+          <span class="cc-wall__cap">晚归的路灯与脚步</span>
+        </div>
+        <div class="cc-wall__item">
+          <svg viewBox="0 0 320 320" role="img" aria-label="影像墙图片：玻璃罐里分层的彩色软糖特写">
+            <rect width="320" height="320" fill="#eef6ee"/>
+            <rect x="96" y="76" width="128" height="180" rx="20" fill="#ffffff" opacity=".85"/>
+            <rect x="112" y="150" width="96" height="26" fill="#ffb8cd"/>
+            <rect x="112" y="180" width="96" height="26" fill="#b7d98f"/>
+            <rect x="112" y="210" width="96" height="26" fill="#ffe08a"/>
+            <rect x="112" y="120" width="96" height="26" fill="#c9b8ff"/>
+            <rect x="112" y="76" width="96" height="40" rx="8" fill="#c98a63" opacity=".5"/>
+            <circle cx="76" cy="80" r="14" fill="#ffd9b8"/>
+            <circle cx="252" cy="252" r="10" fill="#a9e6d4"/>
+          </svg>
+          <span class="cc-wall__cap">糖罐分层 · 色彩实验</span>
+        </div>
+        <div class="cc-wall__item cc-wall__item--lg">
+          <svg viewBox="0 0 640 640" role="img" aria-label="影像墙大图：雨天的玻璃窗与室内暖光下的餐桌">
+            <rect width="640" height="640" fill="#cfe3f4"/>
+            <rect x="0" y="420" width="640" height="220" fill="#a98b74"/>
+            <rect x="0" y="410" width="640" height="16" fill="#8e725d"/>
+            <rect x="60" y="90" width="520" height="310" rx="14" fill="#e8f4ff"/>
+            <path d="M60 90h520v310H60z" fill="none" stroke="#ffffff" stroke-width="12"/>
+            <path d="M320 90v310M60 240h520" stroke="#ffffff" stroke-width="10"/>
+            <path d="M110 150l30 60M170 130l26 74M470 140l24 66M520 160l22 58" stroke="#ffffff" stroke-width="6" opacity=".8" stroke-linecap="round"/>
+            <rect x="200" y="470" width="240" height="18" rx="9" fill="#7d624f"/>
+            <circle cx="250" cy="452" r="26" fill="#ffe08a" opacity=".85"/>
+            <circle cx="320" cy="446" r="20" fill="#ffb8cd" opacity=".9"/>
+            <circle cx="390" cy="452" r="26" fill="#ffe08a" opacity=".85"/>
+            <path d="M420 300c34 0 54 26 54 56" stroke="#8dc99a" stroke-width="7" fill="none" stroke-linecap="round"/>
+          </svg>
+          <span class="cc-wall__cap">雨天窗内的餐桌 · 环境声</span>
+        </div>
+        <div class="cc-wall__item">
+          <svg viewBox="0 0 320 320" role="img" aria-label="影像墙图片：手写食谱便签与铅笔">
+            <rect width="320" height="320" fill="#fff6e8"/>
+            <rect x="0" y="196" width="320" height="124" fill="#e5c9a5"/>
+            <rect x="52" y="52" width="216" height="160" rx="10" fill="#ffffff"/>
+            <path d="M78 84h160M78 110h160M78 136h120M78 162h142" stroke="#e0b48f" stroke-width="7" stroke-linecap="round"/>
+            <rect x="220" y="200" width="90" height="14" rx="7" fill="#f7c543" transform="rotate(-18 220 200)"/>
+            <path d="M220 200l-16 12 6-20z" fill="#c98a63"/>
+          </svg>
+          <span class="cc-wall__cap">食谱便签 · 手写配比</span>
+        </div>
+        <div class="cc-wall__item">
+          <svg viewBox="0 0 320 320" role="img" aria-label="影像墙图片：菜市场里整齐码放的当季水果">
+            <rect width="320" height="320" fill="#e3f0dc"/>
+            <rect x="0" y="230" width="320" height="90" fill="#c9a678"/>
+            <rect x="36" y="140" width="110" height="90" rx="10" fill="#ffffff" opacity=".7"/>
+            <circle cx="66" cy="172" r="14" fill="#ff9f74"/>
+            <circle cx="100" cy="172" r="14" fill="#ffb36b"/>
+            <circle cx="82" cy="204" r="14" fill="#f7c543"/>
+            <rect x="176" y="150" width="110" height="80" rx="10" fill="#ffffff" opacity=".7"/>
+            <circle cx="206" cy="184" r="14" fill="#ffb8cd"/>
+            <circle cx="240" cy="184" r="14" fill="#ffd0dd"/>
+            <circle cx="222" cy="212" r="12" fill="#ff9f74"/>
+            <path d="M140 96c30-20 62-6 70 22" stroke="#8dc99a" stroke-width="6" fill="none" stroke-linecap="round"/>
+          </svg>
+          <span class="cc-wall__cap">菜市场 · 当季的橙色</span>
+        </div>
+        <div class="cc-wall__item">
+          <svg viewBox="0 0 320 320" role="img" aria-label="影像墙图片：夜晚书桌上亮着的小夜灯与合起的书本">
+            <rect width="320" height="320" fill="#2f2530"/>
+            <rect x="0" y="226" width="320" height="94" fill="#42363f"/>
+            <circle cx="160" cy="146" r="58" fill="#ffe08a" opacity=".22"/>
+            <rect x="142" y="132" width="36" height="60" rx="10" fill="#ffe08a"/>
+            <path d="M160 192l-24 34h48z" fill="#ffe08a" opacity=".3"/>
+            <rect x="70" y="196" width="60" height="30" rx="5" fill="#ffb8cd" opacity=".7"/>
+            <rect x="92" y="186" width="60" height="30" rx="5" fill="#c9b8ff" opacity=".6"/>
+            <circle cx="264" cy="80" r="10" fill="#ffffff" opacity=".5"/>
+          </svg>
+          <span class="cc-wall__cap">台灯下的最后一页</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 评价 + 灵感工具 -->
+  <section class="cc-section" id="cc-voice">
+    <div class="cc-container">
+      <span class="cc-kicker">COMMUNITY VOICE</span>
+      <h2 class="cc-h2">社区评价与创作灵感</h2>
+      <p class="cc-lede">来自观众的留言与创作者的反馈，是我们持续优化的依据；右侧的灵感工具则把编辑经验做成可直接使用的提示。</p>
+      <div class="cc-reviews" style="margin-bottom:36px">
+        <article class="cc-review">
+          <div class="cc-review__top">
+            <span class="cc-avatar cc-avatar--pink">林</span>
+            <div>
+              <div class="cc-review__who">林小满</div>
+              <div class="cc-review__when">11 月 16 日</div>
+            </div>
+          </div>
+          <div class="cc-review__stars">★★★★★</div>
+          <p>《手作软糖实验室》是我今年看得最认真的一档教程。作者把失败的两次都放进去了，还写了为什么失败，这种诚实比成品好看更难得。跟着做了一次，终于成功。</p>
+        </article>
+        <article class="cc-review">
+          <div class="cc-review__top">
+            <span class="cc-avatar cc-avatar--sky">陈</span>
+            <div>
+              <div class="cc-review__who">陈默</div>
+              <div class="cc-review__when">11 月 14 日</div>
+            </div>
+          </div>
+          <div class="cc-review__stars">★★★★<span class="cc-v-muted">★</span></div>
+          <p>夜航影像那期书店真的治愈，不过我更喜欢白天的街角记录者。希望城市地图能做更多小城市，不只是省会，那种小城的甜味其实更有意思。</p>
+        </article>
+        <article class="cc-review">
+          <div class="cc-review__top">
+            <span class="cc-avatar cc-avatar--mint">苏</span>
+            <div>
+              <div class="cc-review__who">苏打水不加冰</div>
+              <div class="cc-review__when">11 月 12 日</div>
+            </div>
+          </div>
+          <div class="cc-review__stars">★★★★★</div>
+          <p>投稿过两次，编辑给的反馈很具体，不是套话。第二次改完的片子被选进专题，那种被认真对待的感觉很珍贵。会继续在这里更新。</p>
+        </article>
+        <article class="cc-review">
+          <div class="cc-review__top">
+            <span class="cc-avatar cc-avatar--peach">阿</span>
+            <div>
+              <div class="cc-review__who">阿周不吃香菜</div>
+              <div class="cc-review__when">11 月 10 日</div>
+            </div>
+          </div>
+          <div class="cc-review__stars">★★★★★</div>
+          <p>作为一个不会做饭的人，看晴天慢放的视频居然也能看半小时。画面很稳，没有那种刺耳的配乐，做饭的时候放着当背景音特别舒服。</p>
+        </article>
+        <article class="cc-review">
+          <div class="cc-review__top">
+            <span class="cc-avatar cc-avatar--lilac">K</span>
+            <div>
+              <div class="cc-review__who">Kiki_在画画</div>
+              <div class="cc-review__when">11 月 8 日</div>
+            </div>
+          </div>
+          <div class="cc-review__stars">★★★★★</div>
+          <p>阿柚的配色思路对学插画的人很有用，尤其是她讲废稿的那一段。建议官方可以出个合集，把每期讲到的配色整理成色卡，方便反复看。</p>
+        </article>
+        <article class="cc-review">
+          <div class="cc-review__top">
+            <span class="cc-avatar cc-avatar--butter">老</span>
+            <div>
+              <div class="cc-review__who">老派青年</div>
+              <div class="cc-review__when">11 月 5 日</div>
+            </div>
+          </div>
+          <div class="cc-review__stars">★★★★<span class="cc-v-muted">★</span></div>
+          <p>整体质感很稳，就是更新频率对我来说有点慢。理解慢工出细活，如果能增加一点短小的花絮或者幕后片段，等待期会更好过一点。</p>
+        </article>
+      </div>
+
+      <div class="cc-tools">
+        <div class="cc-toolbox">
+          <h3>创作灵感工具</h3>
+          <p class="cc-sub">选择你想要的方向，获取一条可直接开工的拍摄建议。工具基于官方编辑经验整理，点击生成即可替换。</p>
+          <div class="cc-toolbox__chips">
+            <button class="cc-chip" data-idea="日常" type="button">日常记录</button>
+            <button class="cc-chip" data-idea="手作" type="button">手作教程</button>
+            <button class="cc-chip" data-idea="城市" type="button">城市探索</button>
+            <button class="cc-chip" data-idea="访谈" type="button">人物访谈</button>
+          </div>
+          <div class="cc-toolbox__out" id="ccIdeaOut">
+            <strong>提示：</strong>点击上方任一方向，生成一条选题建议。建议包含开场画面、核心动作与收尾情绪三个部分，适合三到八分钟的短内容。
+          </div>
+          <button class="cc-btn cc-btn--sm cc-toolbox__btn" id="ccIdeaBtn" type="button">换一条建议</button>
+        </div>
+        <div class="cc-update-list" id="cc-news">
+          <article class="cc-update">
+            <div class="cc-update__date">2026 / 11 / 18 · 官方发布</div>
+            <h3 class="cc-update__title">「甜味影像计划」第二季报名开启</h3>
+            <p>面向所有记录者征集三分钟以内的原创短片，新增手机拍摄单元，报名截止 12 月 20 日。</p>
+          </article>
+          <article class="cc-update">
+            <div class="cc-update__date">2026 / 11 / 15 · 内容更新</div>
+            <h3 class="cc-update__title">城市甜蜜地图新增成都、杭州两条路线</h3>
+            <p>每期附步行路线与拍摄攻略，支持下载离线版清单，方便直接出发。</p>
+          </article>
+          <article class="cc-update">
+            <div class="cc-update__date">2026 / 11 / 09 · 社区动态</div>
+            <h3 class="cc-update__title">本周新入驻创作者 27 位</h3>
+            <p>新人扶持通道持续开放，提交作品可获得编辑一对一反馈与首页推荐机会。</p>
+          </article>
+          <article class="cc-update">
+            <div class="cc-update__date">2026 / 11 / 02 · 品牌合作</div>
+            <h3 class="cc-update__title">与三家生活方式品牌达成内容共创</h3>
+            <p>合作围绕「厨房里的慢时光」展开，相关企划将于十二月陆续上线。</p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 合作品牌 -->
+  <section class="cc-section cc-section--alt" id="cc-partners">
+    <div class="cc-container">
+      <span class="cc-kicker">PARTNERS</span>
+      <h2 class="cc-h2">合作品牌与伙伴</h2>
+      <p class="cc-lede">我们与气质相近的品牌长期共创内容，所有合作均以不打扰观看体验为前提，明确标注合作信息。</p>
+      <div class="cc-partners">
+        <div class="cc-partner"><div class="cc-partner__mark"></div>果屿果酱</div>
+        <div class="cc-partner"><div class="cc-partner__mark" style="background:linear-gradient(140deg,#c9b8ff,#9f8bff)"></div>慢野器物</div>
+        <div class="cc-partner"><div class="cc-partner__mark" style="background:linear-gradient(140deg,#a9e6d4,#5ecfb0)"></div>日常茶事</div>
+        <div class="cc-partner"><div class="cc-partner__mark" style="background:linear-gradient(140deg,#ffe6a0,#f7c543)"></div>光年书店</div>
+        <div class="cc-partner"><div class="cc-partner__mark" style="background:linear-gradient(140deg,#a9d5ff,#6fa8ff)"></div>南窗摄影</div>
+        <div class="cc-partner"><div class="cc-partner__mark" style="background:linear-gradient(140deg,#ffcba9,#ff9f74)"></div>小满烘焙</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="cc-section" id="cc-faq">
+    <div class="cc-container">
+      <span class="cc-kicker">HELP</span>
+      <h2 class="cc-h2">常见问题</h2>
+      <p class="cc-lede">关于内容、投稿与合作的常见疑问，点击可展开查看详细说明。</p>
+      <div class="cc-faq">
+        <details>
+          <summary>白桃软糖cc 是做什么内容的品牌？</summary>
+          <p>我们是一个生活方式影像品牌与原创内容社区，内容涵盖甜味日常记录、手作教程、城市探索与创作者访谈。品牌官网会同步官方栏目更新、专题企划进度与社区活动信息，所有作品均为原创或已获授权。</p>
+        </details>
+        <details>
+          <summary>如何向平台投稿？需要什么条件？</summary>
+          <p>点击页面右上角「投稿」按钮即可填写表单，说明选题、时长与素材来源。我们接受个人与团队投稿，不限制设备和粉丝量，更看重表达是否真诚、画面是否清晰、声音是否可以听清。提交后一般三个工作日内会收到编辑反馈。</p>
+        </details>
+        <details>
+          <summary>作品被选入专题后，版权如何归属？</summary>
+          <p>作品版权始终归创作者所有。平台仅就展示、推广与专题内使用获得授权，不会改变作品归属，也不会在未经许可的情况下用于商业广告。具体条款会在入选确认时以书面形式说明。</p>
+        </details>
+        <details>
+          <summary>品牌合作怎么联系？</summary>
+          <p>可通过页面底部联系邮箱提交品牌资料与合作诉求，或使用「联系我们」中的表单。我们优先考虑与内容调性一致、尊重创作者表达的合作方式，并在成片中明确标注合作信息。</p>
+        </details>
+        <details>
+          <summary>为什么有些内容更新节奏比较慢？</summary>
+          <p>我们对每部上线作品都会进行选题、画面与声音的编辑审核，部分教程类内容还需要多次实拍与配方验证。慢一点是为了让内容更经得起反复观看，也请关注官方动态获取最新排期。</p>
+        </details>
+        <details>
+          <summary>能否下载视频或素材？</summary>
+          <p>官方栏目会不定期提供比例表、路线清单等辅助资料下载；视频本身如需引用或二次创作，请先通过联系渠道申请授权，我们会根据用途给出明确答复。</p>
+        </details>
+        <details>
+          <summary>如何参与社区投票与挑战活动？</summary>
+          <p>在专题企划页面可参与当期投票，活动期间每个账号每日可投票一次。挑战活动通常围绕具体主题展开，优秀作品将进入首页推荐并获得创作者成长档案记录。</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- 联系 -->
+  <section class="cc-section cc-section--alt" id="cc-contact">
+    <div class="cc-container">
+      <span class="cc-kicker">CONTACT</span>
+      <h2 class="cc-h2">联系与合作</h2>
+      <p class="cc-lede">无论是投稿、合作还是反馈，我们都希望听到具体的声音。以下入口均直达官方团队。</p>
+      <div class="cc-contact">
+        <div class="cc-contact__card">
+          <h3>内容投稿与创作者入驻</h3>
+          <p>提交选题或成片链接，编辑将在一个工作周内回复。欢迎长期更新者加入创作者矩阵，获得选题建议、剪辑思路与封面规范支持。</p>
+          <ul class="cc-contact__list">
+            <li><b>投稿邮箱：</b>create@baitao-cc.example</li>
+            <li><b>合作邮箱：</b>partner@baitao-cc.example</li>
+            <li><b>工作时间：</b>周一至周五 10:00–19:00</li>
+          </ul>
+          <div class="cc-contact__actions">
+            <button class="cc-btn cc-btn--sm" id="ccSubmitBtn" type="button">填写投稿表单</button>
+            <button class="cc-btn cc-btn--sm cc-btn--ghost" data-share type="button">分享官网</button>
+          </div>
+        </div>
+        <div class="cc-contact__card">
+          <h3>品牌共创与媒体联络</h3>
+          <p>我们提供专题共创、内容定制与创作者联动等多种合作方式，所有合作均以尊重观看体验为前提，并在内容中明确标注。</p>
+          <ul class="cc-contact__list">
+            <li><b>合作类型：</b>专题共创 / 内容定制 / 创作者联动</li>
+            <li><b>响应时间：</b>收到资料后 2 个工作日内初步回复</li>
+            <li><b>品牌资料：</b>请附品牌简介、合作诉求与排期</li>
+          </ul>
+          <div class="cc-contact__actions">
+            <button class="cc-btn cc-btn--sm" data-report type="button">反馈与建议</button>
+            <button class="cc-btn cc-btn--sm cc-btn--ghost" id="ccCopyLink" type="button">复制本页链接</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="cc-footer">
+  <div class="cc-container">
+    <div class="cc-footer__grid">
+      <div>
+        <div class="cc-footer__brand">
+          <span class="cc-logo__mark" aria-hidden="true"></span>
+          <span>白桃软糖cc</span>
+        </div>
+        <p>白桃软糖cc 官方网站 · 生活方式影像品牌与原创内容社区。我们以真实、温暖、克制的影像记录日常，为创作者与企业搭建高品质内容生态。</p>
+        <p>持续运营中 · 原创正版 · 高清呈现 · 用户至上</p>
+      </div>
+      <div>
+        <h4>内容</h4>
+        <ul>
+          <li><a href="#cc-focus">焦点内容</a></li>
+          <li><a href="#cc-topics">专题企划</a></li>
+          <li><a href="#cc-wall">影像墙</a></li>
+          <li><a href="#cc-creators">创作者矩阵</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>关于</h4>
+        <ul>
+          <li><a href="#cc-about">品牌故事</a></li>
+          <li><a href="#cc-news">官方动态</a></li>
+          <li><a href="#cc-partners">合作品牌</a></li>
+          <li><a href="#cc-faq">帮助中心</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>参与</h4>
+        <ul>
+          <li><a href="#cc-contact">投稿与入驻</a></li>
+          <li><a href="#cc-voice">创作灵感</a></li>
+          <li><a href="#cc-contact">联系我们</a></li>
+          <li><a href="#cc-home">返回首页</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="cc-footer__bottom">
+      <span>© 2026 白桃软糖cc 官方网站 · 版权所有</span>
+      <span>内容均为原创或已获授权 · 请勿擅自转载</span>
+      <span>备案号：示例备案 000000 号</span>
+    </div>
+  </div>
+</footer>
+
+<button class="cc-totop" id="ccToTop" type="button" aria-label="回到顶部">↑</button>
+
+<div class="cc-toast" id="ccToast" role="status" aria-live="polite"></div>
+
+<!-- 通用弹窗：投稿 / 分享 / 反馈 -->
+<div class="cc-modal" id="ccModal" role="dialog" aria-modal="true" aria-labelledby="ccModalTitle">
+  <div class="cc-modal__panel">
+    <button class="cc-modal__close" id="ccModalClose" type="button" aria-label="关闭弹窗">✕</button>
+    <div id="ccModalBody"></div>
+  </div>
+</div>
+
+<script>
+(function(){
+  "use strict";
+
+  var toastEl = document.getElementById('ccToast');
+  var toastTimer = null;
+  function showToast(msg){
+    if(!toastEl) return;
+    toastEl.textContent = msg;
+    toastEl.classList.add('cc-is-show');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function(){
+      toastEl.classList.remove('cc-is-show');
+    }, 2200);
+  }
+
+  /* ---------- 移动端导航 ---------- */
+  var burger = document.getElementById('ccBurger');
+  var nav = document.getElementById('ccNav');
+  if(burger && nav){
+    burger.addEventListener('click', function(){
+      var open = nav.classList.toggle('cc-is-open');
+      burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    nav.addEventListener('click', function(e){
+      if(e.target.tagName === 'A'){
+        nav.classList.remove('cc-is-open');
+        burger.setAttribute('aria-expanded','false');
+      }
+    });
+  }
+
+  /* ---------- 搜索反馈 ---------- */
+  var searchForm = document.getElementById('ccSearchForm');
+  var searchInput = document.getElementById('ccSearchInput');
+  var searchHint = document.getElementById('ccSearchHint');
+  if(searchForm && searchInput && searchHint){
+    var hintItems = Array.prototype.slice.call(searchHint.querySelectorAll('p'));
+    searchInput.addEventListener('input', function(){
+      var q = searchInput.value.trim();
+      if(!q){
+        searchHint.classList.remove('cc-is-open');
+        hintItems.forEach(function(p){p.classList.remove('cc-hit');});
+        return;
+      }
+      searchHint.classList.add('cc-is-open');
+      var any = false;
+      hintItems.forEach(function(p){
+        var hit = p.getAttribute('data-key').indexOf(q) > -1 || p.textContent.indexOf(q) > -1;
+        p.classList.toggle('cc-hit', hit);
+        if(hit) any = true;
+      });
+      if(!any){
+        hintItems.forEach(function(p){p.classList.remove('cc-hit');});
+      }
+    });
+    searchForm.addEventListener('submit', function(e){
+      e.preventDefault();
+      var q = searchInput.value.trim();
+      if(!q){
+        showToast('请输入关键词后再搜索');
+        searchInput.focus();
+        return;
+      }
+      var first = searchHint.querySelector('p.cc-hit');
+      searchHint.classList.remove('cc-is-open');
+      if(first){
+        showToast('已为你找到相关内容：' + first.textContent.split('·')[0].trim());
+      }else{
+        showToast('暂未匹配到「' + q + '」，可尝试：慢食 / 城市 / 手作 / Vlog');
+      }
+    });
+    document.addEventListener('click', function(e){
+      if(!searchForm.contains(e.target)){
+        searchHint.classList.remove('cc-is-open');
+      }
+    });
+  }
+
+  /* ---------- 点赞 / 收藏 ---------- */
+  document.addEventListener('click', function(e){
+    var likeBtn = e.target.closest('[data-like]');
+    if(likeBtn){
+      e.preventDefault();
+      var b = likeBtn.querySelector('b');
+      var on = likeBtn.classList.toggle('cc-is-on');
+      var base = b ? parseInt(b.textContent,10) || 0 : 0;
+      if(b){ b.textContent = on ? base + 1 : Math.max(0, base - 1); }
+      likeBtn.firstChild.textContent = on ? '♥ 已喜欢 ' : '♡ 喜欢 ';
+      showToast(on ? '已记录你的喜欢，感谢支持原创内容' : '已取消喜欢');
+      return;
+    }
+    var favBtn = e.target.closest('[data-fav]');
+    if(favBtn){
+      e.preventDefault();
+      var fOn = favBtn.classList.toggle('cc-is-on');
+      favBtn.textContent = fOn ? '★ 已收藏' : '☆ 收藏';
+      showToast(fOn ? '已加入个人收藏夹' : '已从收藏夹移除');
+      return;
+    }
+    var cBtn = e.target.closest('[data-comment]');
+    if(cBtn){
+      e.preventDefault();
+      openModal('comment');
+      return;
+    }
+    var sBtn = e.target.closest('[data-share]');
+    if(sBtn){
+      e.preventDefault();
+      openModal('share');
+      return;
+    }
+    var rBtn = e.target.closest('[data-report]');
+    if(rBtn){
+      e.preventDefault();
+      openModal('report');
+      return;
+    }
+  });
+
+  /* ---------- 数字滚动 ---------- */
+  var counters = Array.prototype.slice.call(document.querySelectorAll('[data-count]'));
+  function animateCounter(el){
+    var target = parseInt(el.getAttribute('data-count'),10) || 0;
+    var start = null;
+    var dur = 1400;
+    function step(t){
+      if(!start) start = t;
+      var p = Math.min(1, (t - start) / dur);
+      var eased = 1 - Math.pow(1 - p, 3);
+      el.textContent = Math.round(target * eased).toLocaleString('zh-CN');
+      if(p < 1) requestAnimationFrame(step);
+    }
+    requestAnimationFrame(step);
+  }
+  if('IntersectionObserver' in window){
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if(en.isIntersecting){
+          animateCounter(en.target);
+          io.unobserve(en.target);
+        }
+      });
+    }, {threshold:.5});
+    counters.forEach(function(el){ io.observe(el); });
+  }else{
+    counters.forEach(function(el){ animateCounter(el); });
+  }
+
+  /* ---------- 回到顶部 ---------- */
+  var toTop = document.getElementById('ccToTop');
+  if(toTop){
+    window.addEventListener('scroll', function(){
+      if(window.scrollY > 520){ toTop.classList.add('cc-is-show'); }
+      else{ toTop.classList.remove('cc-is-show'); }
+    }, {passive:true});
+    toTop.addEventListener('click', function(){
+      window.scrollTo({top:0, behavior:'smooth'});
+    });
+  }
+
+  /* ---------- 弹窗 ---------- */
+  var modal = document.getElementById('ccModal');
+  var modalBody = document.getElementById('ccModalBody');
+  var modalClose = document.getElementById('ccModalClose');
+
+  var MODAL_TEMPLATES = {
+    submit: '<h3 id="ccModalTitle">投稿表单</h3><p class="cc-modal__sub">填写基本信息，编辑会在三个工作日内回复。请保证作品为原创或已获授权。</p>'+
+      '<label for="ccFName">称呼</label><input id="ccFName" type="text" placeholder="如何称呼你">'+
+      '<label for="ccFTopic">选题名称</label><input id="ccFTopic" type="text" placeholder="例如：巷口那碗糖水的四十年">'+
+      '<label for="ccFContact">联系方式</label><input id="ccFContact" type="text" placeholder="邮箱或社交账号">'+
+      '<label for="ccFDesc">作品说明</label><textarea id="ccFDesc" placeholder="时长、拍摄设备、素材来源与想表达的内容"></textarea>'+
+      '<div class="cc-modal__foot"><button class="cc-btn" type="button" data-modal-ok="submitted">提交</button><button class="cc-btn cc-btn--ghost" type="button" data-modal-close>再想想</button></div>',
+    share: '<h3 id="ccModalTitle">分享这份甜</h3><p class="cc-modal__sub">选择渠道分享白桃软糖cc 官方网站，让更多人看到这些真实的影像。</p>'+
+      '<div class="cc-share-row">'+
+      '<button type="button" data-share-to="微信">微信</button>'+
+      '<button type="button" data-share-to="微博">微博</button>'+
+      '<button type="button" data-share-to="QQ">QQ</button>'+
+      '<button type="button" data-share-to="复制链接">复制链接</button>'+
+      '</div>',
+    comment: '<h3 id="ccModalTitle">写下你的评论</h3><p class="cc-modal__sub">友善、具体的反馈会让创作者更有动力。</p>'+
+      '<label for="ccCmt">评论内容</label><textarea id="ccCmt" placeholder="说说你的感受，或者分享看片时的细节"></textarea>'+
+      '<div class="cc-modal__foot"><button class="cc-btn" type="button" data-modal-ok="commented">发布评论</button><button class="cc-btn cc-btn--ghost" type="button" data-modal-close>取消</button></div>',
+    report: '<h3 id="ccModalTitle">反馈与建议</h3><p class="cc-modal__sub">内容错误、体验问题或合作疑问，都可以在这里告诉我们。</p>'+
+      '<label for="ccRep">反馈内容</label><textarea id="ccRep" placeholder="请描述具体问题或建议"></textarea>'+
+      '<div class="cc-modal__foot"><button class="cc-btn" type="button" data-modal-ok="reported">提交反馈</button><button class="cc-btn cc-btn--ghost" type="button" data-modal-close>取消</button></div>'
+  };
+
+  function openModal(type){
+    if(!modal || !modalBody) return;
+    modalBody.innerHTML = MODAL_TEMPLATES[type] || MODAL_TEMPLATES.submit;
+    modal.classList.add('cc-is-open');
+    document.body.style.overflow = 'hidden';
+    var firstInput = modalBody.querySelector('input, textarea');
+    if(firstInput) setTimeout(function(){ firstInput.focus(); }, 60);
+  }
+  function closeModal(){
+    if(!modal) return;
+    modal.classList.remove('cc-is-open');
+    document.body.style.overflow = '';
+  }
+  if(modalClose) modalClose.addEventListener('click', closeModal);
+  if(modal){
+    modal.addEventListener('click', function(e){
+      if(e.target === modal) closeModal();
+    });
+  }
+  document.addEventListener('keydown', function(e){
+    if(e.key === 'Escape') closeModal();
+  });
+
+  document.addEventListener('click', function(e){
+    if(e.target.closest('[data-modal-close]')){ closeModal(); }
+    var ok = e.target.closest('[data-modal-ok]');
+    if(ok){
+      var kind = ok.getAttribute('data-modal-ok');
+      var msgMap = {submitted:'投稿已提交，请留意回复', commented:'评论已发布，感谢你的认真', reported:'反馈已收到，我们会尽快处理'};
+      closeModal();
+      showToast(msgMap[kind] || '已提交');
+      return;
+    }
+    var shareTo = e.target.closest('[data-share-to]');
+    if(shareTo){
+      var ch = shareTo.getAttribute('data-share-to');
+      if(ch === '复制链接'){ copyLink(); }
+      else{ showToast('已生成' + ch + '分享卡片，可在对应应用内粘贴'); }
+      return;
+    }
+  });
+
+  /* ---------- 复制链接 ---------- */
+  function copyLink(){
+    var text = document.title;
+    if(navigator.clipboard && navigator.clipboard.writeText){
+      navigator.clipboard.writeText(text).then(function(){
+        showToast('已复制页面标题，可直接粘贴分享');
+      }).catch(function(){
+        showToast('复制失败，请手动选择页面信息分享');
+      });
+    }else{
+      showToast('当前环境不支持自动复制，请手动选择分享');
+    }
+  }
+  var copyBtn = document.getElementById('ccCopyLink');
+  if(copyBtn) copyBtn.addEventListener('click', copyLink);
+
+  var submitTop = document.getElementById('ccSubmitTop');
+  if(submitTop) submitTop.addEventListener('click', function(){ openModal('submit'); });
+  var submitBtn = document.getElementById('ccSubmitBtn');
+  if(submitBtn) submitBtn.addEventListener('click', function(){ openModal('submit'); });
+
+  /* ---------- 灵感工具 ---------- */
+  var IDEAS = {
+    '日常': [
+      '开场用固定机位拍一扇窗，让光慢慢移过桌面；核心动作只做一件事，比如洗一颗水果或整理一摞书；收尾停留在手的动作上，不要急着切黑场。',
+      '把一天拆成三个声音片段：水声、脚步声、翻页声。画面跟着声音走，观众会更容易进入你的时间。',
+      '尝试用同一角度连拍七天，再把七天剪成六十秒。变化藏在细节里，不需要旁白解释。'
+    ],
+    '手作': [
+      '先拍失败的那一次，再回到成功的那一次。把温度、时长、比例用字幕打清楚，观众会把它当作可执行的教程。',
+      '开场直接展示成品被切开的一瞬间，再倒回原料准备。这样能在前三秒抓住注意力，也保留了完整过程。',
+      '把关键步骤做成三张可暂停的图卡，结尾提示可下载的比例表，能明显提高收藏率。'
+    ],
+    '城市': [
+      '从一家店的一个招牌菜出发，沿着老板的动线走出店门，把街道、邻居和常客带进画面。城市是由关系构成的。',
+      '选择一个具体时间点拍摄，比如下午四点的光。让整条片子都发生在这个时刻，形成统一氛围。',
+      '结尾放一段环境声而不是配乐，给观众留出自己回想的时间。'
+    ],
+    '访谈': [
+      '不要问“你为什么开始”，改问“最近一次想放弃是什么时候”。具体的问题会得到具体的回答。',
+      '把受访者工作时的手部特写穿插在自述之间，让画面与语言互为注解。',
+      '保留一次停顿或沉默。真实的节奏比剪辑的流畅更有力量。'
+    ]
+  };
+  var ideaOut = document.getElementById('ccIdeaOut');
+  var ideaBtn = document.getElementById('ccIdeaBtn');
+  var lastIdeaKey = '日常';
+  function renderIdea(key){
+    var pool = IDEAS[key] || IDEAS['日常'];
+    var pick = pool[Math.floor(Math.random() * pool.length)];
+    if(ideaOut){ ideaOut.innerHTML = '<strong>' + key + '方向建议：</strong>' + pick; }
+  }
+  document.addEventListener('click', function(e){
+    var chip = e.target.closest('[data-idea]');
+    if(chip){
+      lastIdeaKey = chip.getAttribute('data-idea');
+      renderIdea(lastIdeaKey);
+      showToast('已生成「' + lastIdeaKey + '」方向建议');
+    }
+  });
+  if(ideaBtn){
+    ideaBtn.addEventListener('click', function(){
+      renderIdea(lastIdeaKey);
+      showToast('已换一条「' + lastIdeaKey + '」建议');
+    });
+  }
+
+})();
+</script>
+</body>
+  </html>
